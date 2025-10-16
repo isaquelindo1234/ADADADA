@@ -1,8 +1,9 @@
-
 'use client';
 
 import { CheckCircle2, Gift, Sparkles, ShieldCheck, Lock, CircleCheckBig } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { AuthorityLogos } from './AuthorityLogos';
+
 
 export function MidPageOfferSection() {
 
@@ -77,7 +78,9 @@ export function MidPageOfferSection() {
                 SÍ, QUIERO ACCEDER A PULSO DEL AMOR AHORA
             </Button>
             
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 text-center">
+            <AuthorityLogos />
+            
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 text-center mt-6">
                 {trustElements.map((item, index) => (
                     <div key={index} className="flex items-center justify-center gap-2">
                     {item.icon}
