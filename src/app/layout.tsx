@@ -25,6 +25,23 @@ export default function RootLayout({
       <body className="font-body antialiased bg-background">
         {children}
         <Toaster />
+        <Script
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
+          strategy="lazyOnload"
+        ></Script>
+        <Script id="utmify-pixel" strategy="lazyOnload">
+          {`
+            window.pixelId = "68d4384396d6eb6fca9c6acc";
+            (function () {
+              var a = document.createElement("script");
+              a.async = true; a.defer = true;
+              a.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
+              document.head.appendChild(a);
+            })();
+          `}
+        </Script>
       </body>
     </html>
   );
