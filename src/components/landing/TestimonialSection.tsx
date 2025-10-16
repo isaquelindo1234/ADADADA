@@ -41,17 +41,18 @@ export function TestimonialSection() {
           </h2>
         </div>
         
-        {/* Video Testimonial */}
+        {/* Video Testimonial Player */}
         <div className="max-w-xs mx-auto mb-12">
-          <div className="aspect-w-9 aspect-h-16 rounded-lg overflow-hidden border-2 border-primary/50 glowing-shadow">
-            <iframe
+          <div className="aspect-w-9 aspect-h-16 rounded-lg overflow-hidden border-2 border-primary/50 glowing-shadow bg-black">
+            <video
               className="w-full h-full"
-              src="https://www.youtube.com/embed/p-2kxZGJuVk"
-              title="Depoimento em Vídeo"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+              src="https://youtube.com/shorts/p-2kxZGJuVk?si=xVfk8850s-4AjXgj" // Você pode substituir esta URL pela do seu vídeo auto-hospedado
+              controls
+              playsInline
+              poster="https://i.ytimg.com/vi/p-2kxZGJuVk/maxresdefault.jpg" // Opcional: uma imagem de placeholder
+            >
+              Tu navegador no soporta la etiqueta de video.
+            </video>
           </div>
         </div>
 
@@ -59,14 +60,14 @@ export function TestimonialSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="flex flex-col items-center text-center p-6 rounded-lg bg-background transform transition-transform duration-300 hover:-translate-y-1">
-              <p className="font-semibold text-white font-body mb-2">
-                {testimonial.name}
-              </p>
               <div className="flex my-2">
                 {[...Array(testimonial.stars)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
                 ))}
               </div>
+              <p className="font-semibold text-white font-body mb-2">
+                {testimonial.name}
+              </p>
               <p className="text-muted-foreground text-sm font-body italic">
                 "{testimonial.text}"
               </p>
@@ -74,6 +75,7 @@ export function TestimonialSection() {
           ))}
         </div>
       </div>
+      <AspectRatioPlugin />
     </section>
   );
 }
@@ -84,6 +86,6 @@ const AspectRatioPlugin = () => (
   <style jsx global>{`
     .aspect-w-9 { position: relative; padding-bottom: 56.25%; }
     .aspect-h-16 { position: relative; padding-bottom: 177.77%; }
-    .aspect-w-9 > *, .aspect-h-16 > * { position: absolute; height: 100%; width: 100%; top: 0; right: 0; bottom: 0; left: 0; }
+    .aspect-w-9 > *, .aspect-h-16 > * { position: absolute; height: 100%; width: 100%; top: 0; right: 0; bottom: 0; left: 0; object-fit: cover; }
   `}</style>
 );
