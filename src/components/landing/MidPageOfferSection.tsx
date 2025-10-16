@@ -69,12 +69,14 @@ export function MidPageOfferSection() {
               <p className='text-xs text-muted-foreground mt-1'>(El valor será convertido a tu moneda local en el checkout)</p>
             </div>
 
-            <Button
-                size="lg"
-                className="w-full h-auto py-4 text-lg md:text-xl font-bold btn-glow btn-gradient mb-6 leading-tight whitespace-normal"
-              >
-                SÍ, QUIERO EL PODER PARA CONQUISTARLO
-            </Button>
+            <a href="https://pay.mundpay.com/01997cb3-78e8-7291-b9d5-b4a27fc0f595?ref=" target="_blank" rel="noopener noreferrer">
+              <Button
+                  size="lg"
+                  className="w-full h-auto py-4 text-lg md:text-xl font-bold btn-glow btn-gradient mb-6 leading-tight whitespace-normal"
+                >
+                  SÍ, QUIERO EL PODER PARA CONQUISTARLO
+              </Button>
+            </a>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 text-center mt-6">
                 {trustElements.map((item, index) => (
