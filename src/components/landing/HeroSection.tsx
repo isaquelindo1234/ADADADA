@@ -3,14 +3,6 @@
 import { useEffect } from 'react';
 
 export function HeroSection() {
-  // This useEffect handles the Wistia video loading.
-  useEffect(() => {
-    if (window.Wistia) {
-      window.Wistia.embed('335vqtv9ut', {
-        videoFoam: true,
-      });
-    }
-  }, []);
   
   return (
     <section className="py-8 md:py-12 text-center bg-background">
@@ -23,41 +15,17 @@ export function HeroSection() {
             La respuesta está en la física de la Resonancia Inducida®. Presiona play para que la especialista Elena Navarro te muestre la prueba.
           </p>
           <div 
-            className="wistia_responsive_padding"
-            style={{
-              padding: '177.78% 0 0 0', // This creates a 9:16 aspect ratio
-              position: 'relative',
-              width: '100%',
-              maxWidth: '400px',
-              margin: '0 auto',
-              boxShadow: '0 20px 50px -10px rgba(254, 60, 114, 0.3)',
-              borderRadius: '12px',
-              overflow: 'hidden',
+            className="w-full max-w-[400px] mx-auto rounded-lg overflow-hidden shadow-2xl glowing-shadow"
+            style={{ 
+              aspectRatio: '9 / 16',
             }}
-          >
-            <div 
-              className="wistia_responsive_wrapper"
-              style={{
-                height: '100%',
-                left: 0,
-                position: 'absolute',
-                top: 0,
-                width: '100%',
-              }}
             >
-              <div 
-                className="wistia_embed wistia_async_335vqtv9ut videoFoam=true"
-                style={{ 
-                  height: '100%', 
-                  position: 'absolute',
-                  left: 0,
-                  top: 0,
-                  width: '100%' 
-                }}
-              >
-                &nbsp;
-              </div>
-            </div>
+             <img 
+                src="https://i.postimg.cc/y8N1gBqH/vsl-thumb.png" 
+                alt="Video thumbnail"
+                className="w-full h-full object-cover"
+                data-ai-hint="video thumbnail"
+              />
           </div>
         </div>
       </div>
