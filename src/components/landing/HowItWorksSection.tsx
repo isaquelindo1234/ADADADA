@@ -31,7 +31,7 @@ export function HowItWorksSection() {
                         Es más simple de lo que imaginas. No necesitas meditar por horas ni hacer rituales complicados.
                     </p>
                 </div>
-                <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                     {steps.map((step, index) => (
                         <Card key={index} className="bg-card border-border text-center p-6 rounded-xl transform transition-transform duration-300 hover:-translate-y-2">
                             <CardHeader className="p-0 flex flex-col items-center">

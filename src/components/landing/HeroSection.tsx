@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <section className="py-8 md:py-12 text-center bg-background">
       <div className="container mx-auto px-4 flex flex-col items-center">
-        <div className="w-full max-w-3xl">
+        <div className="w-full max-w-3xl md:max-w-[700px]">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-headline font-bold text-white leading-tight mb-6 text-center">
             Existe un <span className="text-primary">'interruptor de arrepentimiento'</span> en el cerebro masculino. <br /> Pocas mujeres saben cómo activarlo.
           </h1>
@@ -14,7 +14,7 @@ export function HeroSection() {
             La respuesta está en la física de la Resonancia Inducida®. Presiona play para que la especialista Elena Navarro te muestre la prueba.
           </p>
           <div
-            className="w-full max-w-[400px] md:max-w-lg lg:max-w-xl mx-auto rounded-lg overflow-hidden shadow-2xl glowing-shadow"
+            className="w-full mx-auto rounded-lg overflow-hidden shadow-2xl glowing-shadow"
           >
             <Script
               src="https://fast.wistia.com/embed/335vqtv9ut.js"

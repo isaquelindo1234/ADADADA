@@ -32,7 +32,7 @@ export function MidPageOfferSection() {
   return (
     <section className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto bg-card border border-primary/20 rounded-2xl p-6 md:p-10 shadow-lg grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <div className="max-w-5xl mx-auto bg-card border border-primary/20 rounded-2xl p-4 md:p-10 shadow-lg grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           
           {/* Visual Column */}
           <div className="flex justify-center items-center">
@@ -49,13 +49,13 @@ export function MidPageOfferSection() {
 
           {/* Details Column */}
           <div className="flex flex-col">
-            <h2 className="text-3xl sm:text-4xl font-headline font-bold text-white leading-tight mb-6">
+            <h2 className="text-2xl sm:text-3xl font-headline font-bold text-white leading-tight mb-6">
               Tu Acceso <span className="text-primary">Exclusivo</span> por estar en esta presentación:
             </h2>
             
              <ul className="space-y-3 font-body text-white/90 mb-6">
               {deliverables.map((item, index) => (
-                <li key={index} className="flex items-center text-base md:text-lg bg-background/50 rounded-lg p-3">
+                <li key={index} className="flex items-center text-base bg-background/50 rounded-lg p-2 md:p-3">
                   <div className="w-6 h-6 mr-3 flex-shrink-0">{item.icon}</div>
                   <span dangerouslySetInnerHTML={{ __html: item.name.replace('Frecuencias Principales', '<strong>Frecuencias Principales</strong>').replace('Iris (IA)', '<strong>Iris (IA)</strong>') }}></span>
                 </li>
@@ -65,19 +65,19 @@ export function MidPageOfferSection() {
             <div className='text-center my-4'>
               <p className="text-lg text-muted-foreground font-body line-through">Precio Regular: $47 USD</p>
               <p className="text-5xl md:text-6xl font-headline font-bold text-white">
-                  HOY: solo $19 <span className="text-4xl">USD</span>
+                  HOY: solo $19 <span className="text-3xl md:text-4xl">USD</span>
               </p>
               <p className='text-xs text-muted-foreground mt-1'>(El valor será convertido a tu moneda local en el checkout)</p>
             </div>
 
             <Button
                 size="lg"
-                className="w-full h-auto py-4 text-xl font-bold btn-glow btn-gradient mb-6"
+                className="w-full h-auto py-4 text-lg md:text-xl font-bold btn-glow btn-gradient mb-6"
               >
                 SÍ, QUIERO ACCEDER A PULSO DEL AMOR AHORA
             </Button>
             
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 text-center">
                 {trustElements.map((item, index) => (
                     <div key={index} className="flex items-center justify-center gap-2">
                     {item.icon}

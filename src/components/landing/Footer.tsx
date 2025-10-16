@@ -3,7 +3,7 @@ import { Music4, Twitter, Instagram, Facebook } from 'lucide-react';
 export function Footer() {
   return (
     <footer className="py-10 bg-card border-t border-border text-center md:text-left">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4">
         <div className="grid gap-8 md:grid-cols-4">
           <div className="flex flex-col gap-2 items-center md:items-start">
             <a href="#" className="flex items-center gap-2 mb-2">
@@ -12,6 +12,9 @@ export function Footer() {
                 Pulso del Amor
               </span>
             </a>
+            <p className="text-xs text-muted-foreground/70 md:hidden">
+              Este sitio no está afiliado a Facebook ni a ninguna entidad de Facebook. Facebook es una marca registrada de Facebook, Inc. Los resultados mencionados no son típicos y pueden variar. Actúa con diligencia y consulta a profesionales antes de tomar decisiones financieras o de vida.
+            </p>
           </div>
           
           <div className="md:justify-self-center">
@@ -32,7 +35,7 @@ export function Footer() {
              </ul>
           </div>
           
-          <div className="text-xs text-muted-foreground/70">
+          <div className="text-xs text-muted-foreground/70 hidden md:block">
             <p>Este sitio no está afiliado a Facebook ni a ninguna entidad de Facebook. Facebook es una marca registrada de Facebook, Inc. Los resultados mencionados no son típicos y pueden variar. Actúa con diligencia y consulta a profesionales antes de tomar decisiones financieras o de vida.</p>
           </div>
         </div>

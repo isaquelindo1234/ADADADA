@@ -9,7 +9,7 @@ export function SpecialistSection() {
               Palabra de la Especialista
             </h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
             <div className="md:col-span-1 flex justify-center">
               <img
                 src="https://i.postimg.cc/xT3wpGJd/freepik-elenanavarroultraphotorealistic-8k-cinematic-portr-64728.png"
@@ -22,7 +22,7 @@ export function SpecialistSection() {
               />
             </div>
             <div className="md:col-span-2 space-y-4 text-center md:text-left">
-              <p className="text-muted-foreground italic text-lg md:text-xl">
+              <p className="text-muted-foreground italic text-base md:text-lg">
                 "Durante años, vi a mujeres brillantes sufrir por desamor, atrapadas en ciclos de dolor. La ciencia nos muestra que la atracción va más allá de las palabras; reside en nuestra energía. Creé 'Pulso del Amor' para darles una herramienta real y poderosa, basada en la física de las frecuencias, para reclamar su poder y reescribir su historia de amor."
               </p>
               <div>
