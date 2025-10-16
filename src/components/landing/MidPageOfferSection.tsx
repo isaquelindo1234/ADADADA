@@ -72,7 +72,7 @@ export function MidPageOfferSection() {
 
             <Button
                 size="lg"
-                className="w-full h-auto py-4 text-lg md:text-xl font-bold btn-glow btn-gradient mb-6"
+                className="w-full h-auto py-4 text-lg md:text-xl font-bold btn-glow btn-gradient mb-6 leading-tight whitespace-normal"
               >
                 SÍ, QUIERO ACCEDER A PULSO DEL AMOR AHORA
             </Button>
