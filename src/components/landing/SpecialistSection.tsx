@@ -26,16 +26,7 @@ export function SpecialistSection() {
                 "Durante años, vi a mujeres brillantes sufrir por desamor, atrapadas en ciclos de dolor. La ciencia nos muestra que la atracción va más allá de las palabras; reside en nuestra energía. Creé 'Pulso del Amor' para darles una herramienta real y poderosa, basada en la física de las frecuencias, para reclamar su poder y reescribir su historia de amor."
               </p>
               <div>
-                <img
-                  src="https://i.postimg.cc/tJn5g031/firma.png"
-                  alt="Firma de Elena Navarro"
-                  width={150}
-                  height={75}
-                  loading="lazy"
-                  className="mx-auto md:mx-0"
-                  data-ai-hint="signature"
-                />
-                <p className="font-semibold text-white text-lg">Elena Navarro</p>
+                <p className="font-semibold text-white text-lg mt-4">Elena Navarro</p>
                 <p className="text-sm text-primary">Especialista en Bio-frecuencias y Relaciones</p>
               </div>
             </div>
