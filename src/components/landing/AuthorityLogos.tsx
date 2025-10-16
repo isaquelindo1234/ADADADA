@@ -9,13 +9,13 @@ export function AuthorityLogos() {
     return (
       <div className="py-4">
         <p className="text-center text-sm text-muted-foreground mb-4">COMO VISTO EN:</p>
-        <div className="flex justify-center items-center gap-6 sm:gap-8 flex-wrap">
+        <div className="flex justify-center items-center gap-8 sm:gap-12 flex-wrap">
           {logos.map((logo) => (
             <img
               key={logo.name}
               src={logo.src}
               alt={logo.name}
-              className="h-5 sm:h-6 object-contain grayscale opacity-60"
+              className="h-8 sm:h-10 object-contain grayscale opacity-60"
             />
           ))}
         </div>
