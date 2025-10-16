@@ -14,8 +14,8 @@ export function SpecialistSection() {
               <img
                 src="https://i.postimg.cc/xT3wpGJd/freepik-elenanavarroultraphotorealistic-8k-cinematic-portr-64728.png"
                 alt="Elena Navarro"
-                width={250}
-                height={250}
+                width="250"
+                height="250"
                 loading="lazy"
                 className="rounded-full object-cover aspect-square w-48 h-48 md:w-full md:h-auto"
                 data-ai-hint="woman portrait"

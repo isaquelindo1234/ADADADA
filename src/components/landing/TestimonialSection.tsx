@@ -75,8 +75,8 @@ export function TestimonialSection() {
                        <img
                           src={testimonial.image}
                           alt={testimonial.imageAlt}
-                          width={400}
-                          height={711}
+                          width="400"
+                          height="711"
                           loading="lazy"
                           className="rounded-lg object-contain w-full h-auto"
                           data-ai-hint="chat message"

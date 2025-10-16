@@ -38,8 +38,8 @@ export function MidPageOfferSection() {
               <img
                 src="https://i.postimg.cc/yxhqBBWj/Whisk-5def57aea14cccebbc347a165bbe7b1ddr-removebg-preview.png"
                 alt="Mockup do Produto Pulso del Amor"
-                width={400}
-                height={400}
+                width="400"
+                height="400"
                 loading="lazy"
                 className="object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] w-full max-w-xs md:max-w-sm h-auto"
                 data-ai-hint="product box phone"
