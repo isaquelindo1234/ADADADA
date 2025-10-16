@@ -82,8 +82,8 @@ export function TestimonialSection() {
 // This is a simple implementation. For production, consider using @tailwindcss/aspect-ratio plugin
 const AspectRatioPlugin = () => (
   <style jsx global>{`
-    .aspect-w-9 { position: relative; padding-bottom: calc(9 / 16 * 100%); }
-    .aspect-h-16 { position: relative; padding-bottom: calc(16 / 9 * 100%); }
+    .aspect-w-9 { position: relative; padding-bottom: 56.25%; }
+    .aspect-h-16 { position: relative; padding-bottom: 177.77%; }
     .aspect-w-9 > *, .aspect-h-16 > * { position: absolute; height: 100%; width: 100%; top: 0; right: 0; bottom: 0; left: 0; }
   `}</style>
 );
