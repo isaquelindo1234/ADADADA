@@ -39,7 +39,7 @@ export function HeroSection() {
     <section className="py-8 md:py-12 text-center bg-background">
       <div className="container mx-auto px-4 flex flex-col items-center">
         <div className="max-w-2xl">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-headline font-bold text-white leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-headline font-bold text-white leading-tight mb-6 text-center">
             Existe un <span className="text-primary">'interruptor de arrepentimiento'</span> en el cerebro masculino. <br /> Pocas mujeres saben cómo activarlo.
           </h1>
           <div
