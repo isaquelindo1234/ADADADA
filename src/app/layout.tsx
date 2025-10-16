@@ -4,8 +4,8 @@ import './globals.css';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Frequencia del Reencuentro',
-  description: 'Haz que él regrese a ti… en solo 5 minutos por día.',
+  title: 'Pulso del Amor',
+  description: 'Activa el interruptor de arrepentimiento en el cerebro masculino.',
 };
 
 export default function RootLayout({
@@ -13,38 +13,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const scrollScript = `
-    window.onload = function () {
-      if (window.location.hash) {
-        history.replaceState(null, null, ' ');
-      }
-      setTimeout(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }, 0);
-    };
-  `;
-
   return (
     <html lang="es" className="dark">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-        <Script id="utmify-pixel-config" strategy="afterInteractive">
-          {`window.pixelId = "68d4384396d6eb6fca9c6acc";`}
-        </Script>
-        <Script
-          id="utmify-pixel-script"
-          src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"
-          strategy="afterInteractive"
-          async
-          defer
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+        <Script src="https://fast.wistia.com/assets/external/E-v1.js" async />
       </head>
       <body className="font-body antialiased bg-background">
         {children}
         <Toaster />
-        <script dangerouslySetInnerHTML={{ __html: scrollScript }} />
       </body>
     </html>
   );

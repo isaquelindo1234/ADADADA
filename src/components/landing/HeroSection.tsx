@@ -1,77 +1,91 @@
-"use client";
+'use client';
 
-import { Button } from "@/components/ui/button";
-import { Star, Headphones } from "lucide-react";
+import { useEffect } from 'react';
 
 export function HeroSection() {
-  const scrollToOffer = () => {
-    const offerSection = document.getElementById('offer');
-    if(offerSection) {
-      offerSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
+  // This useEffect handles the Wistia video loading.
+  useEffect(() => {
+    const wistiaVideoId = '335vqtv9ut';
+    const script = document.createElement('script');
+    script.src = 'https://fast.wistia.com/assets/external/E-v1.js';
+    script.async = true;
+    document.body.appendChild(script);
 
-  const avatars = [
-    "https://i.pinimg.com/1200x/b7/3f/c0/b73fc0869f0cf140e280f48f012e1f5b.jpg",
-    "https://i.pinimg.com/1200x/15/fd/dc/15fddc6fc5fd2e4cb1da689604bf45b7.jpg",
-    "https://i.pinimg.com/736x/ef/ca/78/efca789620a79774599970c6829032f1.jpg",
-  ]
+    script.onload = () => {
+      if (window.Wistia) {
+        window.Wistia.embed(wistiaVideoId, {
+          version: 'v1',
+          videoWidth: '100%',
+          videoHeight: '100%',
+          playerColor: 'FE3C72',
+          videoFoam: {
+            // This creates the 9:16 aspect ratio
+            maxWidth: 400,
+            aspectRatio: 9 / 16,
+          },
+          autoPlay: true,
+          muted: true,
+          controlsVisibleOnLoad: true,
+        });
+      }
+    };
 
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+  
   return (
-    <section
-      id="hero"
-      className="relative overflow-hidden text-center pt-8 pb-8 md:pt-16 md:pb-16"
-    >
-      <div className="relative z-10 container mx-auto px-4 flex flex-col items-center">
-        <div className="max-w-md">
-          
-          <p className="text-primary font-semibold mb-2 text-sm md:text-base">
-            🔮 Escucha esta frecuencia durante 5 minutos
-          </p>
-          
-          <h1 className="text-3xl sm:text-4xl font-headline font-extrabold text-white leading-tight mb-4">
-            Existe un 'interruptor de arrepentimiento' en el cerebro masculino.<br/> Pocas mujeres saben cómo activarlo.
+    <section className="py-8 md:py-12 text-center bg-background">
+      <div className="container mx-auto px-4 flex flex-col items-center">
+        <div className="max-w-2xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-headline font-bold text-white leading-tight mb-6">
+            Y si el <span className="text-primary">'TERMINAMOS'</span>... <br />
+            No fuera el final, sino el <span className="underline decoration-primary">comienzo</span> de tu poder?
           </h1>
-          
-          <p className="text-base md:text-lg text-white/80 font-body max-w-sm mx-auto leading-relaxed mb-6">
-            Tendrás su amor en la palma de tu mano… Activa este interruptor de atracción en tu mente y el camino hacia la relación que soñaste se abrirá.
-          </p>
-
-          <div className="flex flex-col items-center gap-4 w-full max-w-sm">
-            <Button 
-              size="lg" 
-              className="w-full text-base h-auto py-4 px-8 font-bold font-body btn-glow glowing-shadow btn-gradient-2"
-              onClick={scrollToOffer}
+          <div
+            className="wistia_responsive_padding"
+            style={{
+              padding: '177.78% 0 0 0',
+              position: 'relative',
+              boxShadow: '0 20px 50px -10px rgba(254, 60, 114, 0.3)',
+              borderRadius: '12px',
+              overflow: 'hidden',
+              maxWidth: '400px',
+              margin: '0 auto'
+            }}
+          >
+            <div
+              className="wistia_responsive_wrapper"
+              style={{
+                height: '100%',
+                left: 0,
+                position: 'absolute',
+                top: 0,
+                width: '100%',
+              }}
             >
-              🎧 Escuchar la frecuencia ahora
-            </Button>
-            
-            <div className="flex items-center gap-3 pt-2">
-              <div className="flex -space-x-2">
-                {avatars.map((avatar, index) => (
-                  <img 
-                    key={index}
-                    src={avatar}
-                    alt={`Avatar ${index + 1}`}
-                    width={36}
-                    height={36}
-                    className="rounded-full border-2 border-background object-cover"
-                  />
-                ))}
-              </div>
-              <div className="text-left">
-                 <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                  ))}
-                 </div>
-                 <p className="text-xs text-white/80 font-body mt-1">+8.000 mujeres ya escucharon</p>
+              <div
+                className="wistia_embed wistia_async_335vqtv9ut videoFoam=true"
+                style={{
+                  height: '100%',
+                  position: 'relative',
+                  width: '100%',
+                }}
+              >
+                &nbsp;
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
   );
+}
+
+// Add Wistia to the global window object for TypeScript
+declare global {
+  interface Window {
+    Wistia?: any;
+  }
 }

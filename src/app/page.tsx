@@ -1,23 +1,24 @@
-import { HeroSection } from '@/components/landing/HeroSection';
-import { ProofSection } from '@/components/landing/ProofSection';
-import { MethodSection } from '@/components/landing/MethodSection';
-import { OfferSection } from '@/components/landing/OfferSection';
-import { GuaranteeSection } from '@/components/landing/GuaranteeSection';
+import { AuthorityBar } from '@/components/landing/AuthorityBar';
+import { SpecialistSection } from '@/components/landing/SpecialistSection';
 import { FaqSection } from '@/components/landing/FaqSection';
 import { Footer } from '@/components/landing/Footer';
-import { ParticleBackground } from '@/components/landing/ParticleBackground';
+import { GuaranteeSection } from '@/components/landing/GuaranteeSection';
+import { HeroSection } from '@/components/landing/HeroSection';
+import { HowItWorksSection } from '@/components/landing/HowItWorksSection';
+import { OfferSection } from '@/components/landing/OfferSection';
 import { TestimonialSection } from '@/components/landing/TestimonialSection';
+import { TrustBar } from '@/components/landing/TrustBar';
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-screen flex-col bg-background overflow-x-hidden">
-      <ParticleBackground />
-      <main className="flex-1 z-10">
+    <div className="flex min-h-screen flex-col bg-background overflow-x-hidden">
+      <main className="flex-1">
         <HeroSection />
-        <ProofSection />
+        <AuthorityBar />
         <OfferSection />
-        <GuaranteeSection />
-        <MethodSection />
+        <TrustBar />
+        <HowItWorksSection />
+        <SpecialistSection />
         <TestimonialSection />
         <FaqSection />
       </main>
