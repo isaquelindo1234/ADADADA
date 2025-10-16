@@ -12,15 +12,14 @@ export function AuthorityBar() {
         <h3 className="text-center text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-6">
           Como Visto En
         </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-8 gap-x-4 items-center">
           {logos.map((logo) => (
             <div key={logo.name} className="flex justify-center">
               <img
                 src={logo.src}
                 alt={logo.alt}
                 loading="lazy"
-                className="h-6 md:h-8 object-contain"
-                style={{ filter: 'grayscale(1) brightness(1.5)' }}
+                className="h-8 md:h-10 object-contain"
                 data-ai-hint="logo"
               />
             </div>
