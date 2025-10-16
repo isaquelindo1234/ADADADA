@@ -21,20 +21,22 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
         <Script src="https://fast.wistia.com/assets/external/E-v1.js" async />
         <Script src="https://fast.wistia.com/player.js" async />
-        <Script id="utmify-pixel-script" strategy="afterInteractive">
-          {`
-            window.pixelId = "68d4384396d6eb6fca9c6acc";
-            var a = document.createElement("script");
-            a.setAttribute("async", "");
-            a.setAttribute("defer", "");
-            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-            document.head.appendChild(a);
-          `}
+        <Script id="utmify-pixel-config" strategy="afterInteractive">
+          {`window.pixelId = "68d4384396d6eb6fca9c6acc";`}
         </Script>
+        <Script 
+          id="utmify-pixel-script"
+          src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"
+          strategy="afterInteractive"
+          async
+          defer
+        />
         <Script
+          id="utmify-utms-script"
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           data-utmify-prevent-xcod-sck
           data-utmify-prevent-subids
+          strategy="afterInteractive"
           async
           defer
         ></Script>
