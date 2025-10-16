@@ -5,7 +5,6 @@ import { OfferSection } from '@/components/landing/OfferSection';
 import { GuaranteeSection } from '@/components/landing/GuaranteeSection';
 import { FaqSection } from '@/components/landing/FaqSection';
 import { Footer } from '@/components/landing/Footer';
-import { BenefitSection } from '@/components/landing/BenefitSection';
 import { ParticleBackground } from '@/components/landing/ParticleBackground';
 import { TestimonialSection } from '@/components/landing/TestimonialSection';
 
@@ -15,12 +14,11 @@ export default function Home() {
       <ParticleBackground />
       <main className="flex-1 z-10">
         <HeroSection />
-        <BenefitSection />
-        <TestimonialSection />
         <ProofSection />
-        <MethodSection />
         <OfferSection />
         <GuaranteeSection />
+        <MethodSection />
+        <TestimonialSection />
         <FaqSection />
       </main>
       <Footer />
