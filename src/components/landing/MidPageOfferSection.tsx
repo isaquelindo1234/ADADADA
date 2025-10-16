@@ -2,8 +2,6 @@
 
 import { CheckCircle2, Gift, Sparkles, ShieldCheck, Lock, CircleCheckBig } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { AuthorityLogos } from './AuthorityLogos';
-
 
 export function MidPageOfferSection() {
 
@@ -32,7 +30,7 @@ export function MidPageOfferSection() {
 
   return (
     <section className="py-12 md:py-16 bg-background">
-      <div className="container mx-auto px-4">
+      <div className="container">
         <div className="max-w-5xl mx-auto bg-card border border-primary/20 rounded-2xl p-4 md:p-10 shadow-lg grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           
           {/* Visual Column */}
@@ -77,8 +75,6 @@ export function MidPageOfferSection() {
               >
                 SÍ, QUIERO ACCEDER A PULSO DEL AMOR AHORA
             </Button>
-            
-            <AuthorityLogos />
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 text-center mt-6">
                 {trustElements.map((item, index) => (
