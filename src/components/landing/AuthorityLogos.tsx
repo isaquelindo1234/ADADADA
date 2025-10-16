@@ -1,3 +1,4 @@
+
 export function AuthorityLogos() {
     const logos = [
       { name: "Vogue", src: "https://i.postimg.cc/SxbyLNHP/vogue.png" },
@@ -15,7 +16,7 @@ export function AuthorityLogos() {
               key={logo.name}
               src={logo.src}
               alt={logo.name}
-              className="h-8 sm:h-10 object-contain grayscale opacity-60"
+              className="h-10 sm:h-12 object-contain grayscale opacity-60"
             />
           ))}
         </div>
