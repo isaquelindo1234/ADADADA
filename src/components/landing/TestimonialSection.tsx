@@ -44,15 +44,14 @@ export function TestimonialSection() {
         {/* Video Testimonial Player */}
         <div className="max-w-xs mx-auto mb-12">
           <div className="aspect-w-9 aspect-h-16 rounded-lg overflow-hidden border-2 border-primary/50 glowing-shadow bg-black">
-            <video
+            <iframe
               className="w-full h-full"
-              src="https://youtube.com/shorts/p-2kxZGJuVk?si=51AMsvuuZnUTv0LZ" // Você pode substituir esta URL pela do seu vídeo auto-hospedado
-              controls
-              playsInline
-              poster="https://i.ytimg.com/vi/p-2kxZGJuVk/maxresdefault.jpg" // Opcional: uma imagem de placeholder
-            >
-              Tu navegador no soporta la etiqueta de video.
-            </video>
+              src="https://www.youtube.com/embed/p-2kxZGJuVk"
+              title="Depoimento em Vídeo do YouTube"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
 
