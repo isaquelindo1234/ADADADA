@@ -6,6 +6,7 @@ import { HowItWorksSection } from '@/components/landing/HowItWorksSection';
 import { OfferSection } from '@/components/landing/OfferSection';
 import { TestimonialSection } from '@/components/landing/TestimonialSection';
 import { TrustBar } from '@/components/landing/TrustBar';
+import { MidPageOfferSection } from '@/components/landing/MidPageOfferSection';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <HeroSection />
         <OfferSection />
         <AuthorityBar />
+        <MidPageOfferSection />
         <TrustBar />
         <HowItWorksSection />
         <SpecialistSection />
