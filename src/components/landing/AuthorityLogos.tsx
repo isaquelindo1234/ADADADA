@@ -16,7 +16,9 @@ export function AuthorityLogos() {
               key={logo.name}
               src={logo.src}
               alt={logo.name}
-              className="h-10 sm:h-12 object-contain grayscale opacity-60"
+              width={111}
+              height={114}
+              className="object-contain grayscale opacity-60"
             />
           ))}
         </div>
