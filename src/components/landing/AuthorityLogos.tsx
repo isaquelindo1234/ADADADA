@@ -1,10 +1,10 @@
 
 export function AuthorityLogos() {
     const logos = [
-      { name: "Vogue", src: "https://i.postimg.cc/SxbyLNHP/vogue.png" },
-      { name: "Marie Claire", src: "https://i.postimg.cc/qMk4p3rB/marieclaire.png" },
-      { name: "Cosmopolitan", src: "https://i.postimg.cc/L6HyhJcQ/cosmopolitan.png" },
-      { name: "Elle", src: "https://i.postimg.cc/SNqfC9s2/elle.png" },
+      { name: "MOM", src: "https://mexico.mom-gmr.org/uploads/tx_lfrogmom/media/11534-1329_import.png" },
+      { name: "Infobae", src: "https://static.cdnlogo.com/logos/i/91/infobae.svg" },
+      { name: "BBC News", src: "https://toppng.com/uploads/preview/bbc-news-logo-png-bbc-world-channel-logo-11563049882jqyf96g6u7.png" },
+      { name: "Univision", src: "https://e7.pngegg.com/pngimages/518/905/png-clipart-univision-communications-logo-univision-deportes-network-unimas-odessatx-purple-television.png" },
     ];
   
     return (
