@@ -1,4 +1,4 @@
-import { ShieldCheck, Lock, CheckCircle } from 'lucide-react';
+import { ShieldCheck, Lock, CircleCheckBig } from 'lucide-react';
 
 const trustElements = [
   {
@@ -10,7 +10,7 @@ const trustElements = [
     text: "Pago 100% Seguro",
   },
   {
-    icon: <CheckCircle className="h-6 w-6 text-primary" />,
+    icon: <CircleCheckBig className="h-6 w-6 text-primary" />,
     text: "Acceso Inmediato",
   },
 ];

@@ -1,40 +1,45 @@
-import { ShieldCheck } from "lucide-react";
+'use client';
+
+import { ShieldCheck } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export function GuaranteeSection() {
-  return (
-    <section className="py-12 md:py-24 bg-card">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto bg-background border border-border rounded-2xl p-6 md:p-10">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="flex justify-center">
-              <div className="relative text-center">
-                <img
-                  src="https://i.postimg.cc/hG12wWfv/garantia.png"
-                  alt="Garantía de 30 Días"
-                  width={200}
-                  height={200}
-                  loading="lazy"
-                  className="mx-auto drop-shadow-[0_0_15px_hsl(var(--secondary))]"
-                />
-              </div>
-            </div>
+    const scrollToOffer = () => {
+        const offerSection = document.getElementById('offer');
+        if (offerSection) {
+            offerSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
-            <div className="space-y-4 text-center md:text-left">
-              <h3 className="text-white text-xl md:text-2xl font-headline font-bold">
-                Garantía de 30 Días: Tu Pulso o Tu Dinero
-              </h3>
-              <div className="space-y-4 text-muted-foreground font-body leading-relaxed text-base">
-                <p>
-                  Estoy tan segura del poder de "Pulso del Amor" que asumo todo el riesgo por ti. Tienes 30 días completos para usar las frecuencias y ver los cambios por ti misma.
-                </p>
-                <p>
-                  Si en ese tiempo no sientes una transformación en tu energía o si no estás 100% satisfecha por cualquier motivo, solo envía un correo electrónico y te devolveremos cada centavo de tu inversión. Sin preguntas, sin demoras.
-                </p>
-              </div>
+    return (
+        <section className="py-12 md:py-24 bg-card">
+            <div className="container mx-auto px-4">
+                <div className="max-w-3xl mx-auto text-center">
+                    <div className="flex justify-center mb-6">
+                        <img 
+                            src="https://i.postimg.cc/k40NQr5H/garantia-30-dias.png" 
+                            alt="Sello de Garantía de 30 Días" 
+                            width={150} 
+                            height={150}
+                            loading="lazy"
+                            data-ai-hint="guarantee badge"
+                        />
+                    </div>
+                    <h2 className="text-white text-3xl md:text-4xl font-headline font-bold mb-4">
+                        Tu Inversión Está 100% Protegida
+                    </h2>
+                    <p className="text-muted-foreground max-w-2xl mx-auto mb-8 text-base">
+                        Tienes 30 días completos para probar "Pulso del Amor". Si no sientes un cambio radical en tu energía, si no ves cómo la dinámica con él se transforma, o si simplemente decides que no es para ti, solo envíame un correo. Te devolveré cada centavo, sin preguntas, sin complicaciones. El riesgo es todo mío.
+                    </p>
+                    <Button
+                        size="lg"
+                        className="w-full max-w-md mx-auto h-auto py-4 text-xl font-bold btn-glow btn-gradient"
+                        onClick={scrollToOffer}
+                    >
+                        QUIERO MI ACCESO CON GARANTÍA
+                    </Button>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 }
