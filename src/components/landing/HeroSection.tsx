@@ -6,7 +6,9 @@ export function HeroSection() {
   // This useEffect handles the Wistia video loading.
   useEffect(() => {
     if (window.Wistia) {
-      window.Wistia.embed('335vqtv9ut');
+      window.Wistia.embed('335vqtv9ut', {
+        videoFoam: true,
+      });
     }
   }, []);
   
@@ -22,15 +24,11 @@ export function HeroSection() {
           </p>
           <div 
             className="wistia_responsive_padding"
-            style={{ 
-              padding: '177.78% 0 0 0', 
+            style={{
               position: 'relative',
               width: '100%',
               maxWidth: '400px',
               margin: '0 auto',
-              boxShadow: '0 20px 50px -10px rgba(254, 60, 114, 0.3)',
-              borderRadius: '12px',
-              overflow: 'hidden',
             }}
           >
             <div 
@@ -38,16 +36,22 @@ export function HeroSection() {
               style={{
                 height: '100%',
                 left: 0,
-                position: 'absolute',
+                position: 'relative', // Changed from absolute
                 top: 0,
                 width: '100%',
+                padding: '177.78% 0 0 0', // Aspect ratio 9:16
+                boxShadow: '0 20px 50px -10px rgba(254, 60, 114, 0.3)',
+                borderRadius: '12px',
+                overflow: 'hidden',
               }}
             >
               <div 
                 className="wistia_embed wistia_async_335vqtv9ut videoFoam=true"
                 style={{ 
                   height: '100%', 
-                  position: 'relative', 
+                  position: 'absolute', // Inner div is absolute
+                  left: 0,
+                  top: 0,
                   width: '100%' 
                 }}
               >
