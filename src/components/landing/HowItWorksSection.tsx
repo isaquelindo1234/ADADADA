@@ -34,7 +34,7 @@ export function HowItWorksSection() {
                 <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                     {steps.map((step, index) => (
                         <Card key={index} className="bg-card border-border text-center p-6 rounded-xl transform transition-transform duration-300 hover:-translate-y-2">
-                            <CardHeader className="p-0 items-center">
+                            <CardHeader className="p-0 flex flex-col items-center">
                                 {step.icon}
                                 <CardTitle className="font-headline text-xl md:text-2xl text-white">{step.title}</CardTitle>
                                 <CardDescription className="font-body text-white/70 leading-relaxed mt-2 text-base">{step.description}</CardDescription>

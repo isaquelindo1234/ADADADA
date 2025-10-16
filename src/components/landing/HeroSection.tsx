@@ -14,7 +14,7 @@ export function HeroSection() {
             La respuesta está en la física de la Resonancia Inducida®. Presiona play para que la especialista Elena Navarro te muestre la prueba.
           </p>
           <div
-            className="w-full max-w-[400px] mx-auto rounded-lg overflow-hidden shadow-2xl glowing-shadow"
+            className="w-full max-w-[400px] md:max-w-lg lg:max-w-xl mx-auto rounded-lg overflow-hidden shadow-2xl glowing-shadow"
           >
             <Script
               src="https://fast.wistia.com/embed/335vqtv9ut.js"
