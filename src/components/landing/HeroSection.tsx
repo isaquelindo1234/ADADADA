@@ -1,9 +1,8 @@
 'use client';
 
-import { useEffect } from 'react';
+import Script from 'next/script';
 
 export function HeroSection() {
-  
   return (
     <section className="py-8 md:py-12 text-center bg-background">
       <div className="container mx-auto px-4 flex flex-col items-center">
@@ -14,18 +13,18 @@ export function HeroSection() {
           <p className="max-w-xl mx-auto text-base text-muted-foreground mb-8">
             La respuesta está en la física de la Resonancia Inducida®. Presiona play para que la especialista Elena Navarro te muestre la prueba.
           </p>
-          <div 
+          <div
             className="w-full max-w-[400px] mx-auto rounded-lg overflow-hidden shadow-2xl glowing-shadow"
-            style={{ 
-              aspectRatio: '9 / 16',
-            }}
-            >
-             <img 
-                src="https://i.postimg.cc/y8N1gBqH/vsl-thumb.png" 
-                alt="Video thumbnail"
-                className="w-full h-full object-cover"
-                data-ai-hint="video thumbnail"
-              />
+          >
+            <Script
+              src="https://fast.wistia.com/embed/335vqtv9ut.js"
+              async
+              type="module"
+            />
+            <style>
+              {`wistia-player[media-id='335vqtv9ut']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/335vqtv9ut/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }`}
+            </style>
+            <wistia-player media-id="335vqtv9ut" aspect="0.5625"></wistia-player>
           </div>
         </div>
       </div>
@@ -37,5 +36,10 @@ export function HeroSection() {
 declare global {
   interface Window {
     Wistia?: any;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'wistia-player': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement> & { 'media-id': string; aspect: string; }, HTMLElement>;
+    }
   }
 }

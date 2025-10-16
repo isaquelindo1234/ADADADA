@@ -20,6 +20,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
         <Script src="https://fast.wistia.com/assets/external/E-v1.js" async />
+        <Script src="https://fast.wistia.com/player.js" async />
         <Script id="utmify-pixel" strategy="afterInteractive">
           {`
             window.pixelId = "68d4384396d6eb6fca9c6acc";
