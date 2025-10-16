@@ -1,3 +1,4 @@
+
 export function SpecialistSection() {
   return (
     <section className="py-12 md:py-24 bg-card">
@@ -11,7 +12,7 @@ export function SpecialistSection() {
           <div className="grid md:grid-cols-3 gap-8 items-center">
             <div className="md:col-span-1 flex justify-center">
               <img
-                src="https://i.postimg.cc/HL9k0Vz1/Elena-Navarro.png"
+                src="https://i.postimg.cc/xT3wpGJd/freepik-elenanavarroultraphotorealistic-8k-cinematic-portr-64728.png"
                 alt="Elena Navarro"
                 width={250}
                 height={250}
