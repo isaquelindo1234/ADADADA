@@ -73,7 +73,7 @@ export function MidPageOfferSection() {
                 size="lg"
                 className="w-full h-auto py-4 text-lg md:text-xl font-bold btn-glow btn-gradient mb-6 leading-tight whitespace-normal"
               >
-                SÍ, QUIERO ACCEDER A PULSO DEL AMOR AHORA
+                SÍ, QUIERO EL PODER PARA CONQUISTARLO
             </Button>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 text-center mt-6">
