@@ -1,4 +1,3 @@
-import { AuthorityBar } from '@/components/landing/AuthorityBar';
 import { SpecialistSection } from '@/components/landing/SpecialistSection';
 import { FaqSection } from '@/components/landing/FaqSection';
 import { HeroSection } from '@/components/landing/HeroSection';
@@ -12,7 +11,6 @@ export default function Home() {
     <div className="flex min-h-screen flex-col bg-background overflow-x-hidden">
       <main className="flex-1">
         <HeroSection />
-        <AuthorityBar />
         <MidPageOfferSection />
         <TrustBar />
         <HowItWorksSection />
