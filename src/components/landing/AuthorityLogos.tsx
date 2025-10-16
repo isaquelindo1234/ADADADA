@@ -18,6 +18,7 @@ export function AuthorityLogos() {
               alt={logo.name}
               width={111}
               height={114}
+              loading="lazy"
               className="object-contain h-auto"
               style={{maxWidth: '111px'}}
             />
