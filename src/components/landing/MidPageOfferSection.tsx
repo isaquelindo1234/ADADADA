@@ -1,6 +1,6 @@
 'use client';
 
-import { CheckCircle2, Gift, Sparkles, ShieldCheck, Lock, CircleCheckBig, ShieldAlert } from 'lucide-react';
+import { CheckCircle2, Gift, Sparkles, ShieldCheck, Lock, CircleCheckBig, ShieldAlert, Timer } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export function MidPageOfferSection() {
@@ -83,6 +83,14 @@ export function MidPageOfferSection() {
                 <div>
                     <h4 className="font-bold text-white">Garantía Incondicional de 30 Días</h4>
                     <p className="text-sm text-muted-foreground">Si no estás 100% satisfecha, te devolvemos todo tu dinero. Sin preguntas, sin complicaciones. Tu compra es 100% libre de riesgo.</p>
+                </div>
+            </div>
+
+            <div className="bg-background/40 border border-yellow-500/50 rounded-lg p-4 flex items-center gap-4 my-4 animate-pulse">
+                <Timer className="h-10 w-10 text-yellow-400 flex-shrink-0" />
+                <div>
+                    <h4 className="font-bold text-yellow-300">Atención: Oferta Limitada</h4>
+                    <p className="text-sm text-yellow-200/80">Esta oferta especial solo está disponible mientras esta página esté abierta. Si la cierras, podrías perder el acceso al precio promocional.</p>
                 </div>
             </div>
             
