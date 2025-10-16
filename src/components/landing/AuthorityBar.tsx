@@ -18,7 +18,7 @@ export function AuthorityBar() {
                 src={logo.src}
                 alt={logo.alt}
                 loading="lazy"
-                className="h-8 md:h-10 object-contain"
+                className="h-10 md:h-12 object-contain"
                 data-ai-hint="logo"
               />
             </div>
