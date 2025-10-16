@@ -1,7 +1,7 @@
 'use server';
 
 /**
- * @fileOverview An AI agent that generates a personalized 5-minute melody based on user input about their desired relationship outcome.
+ * @fileOverview An AI agent that generates a personalized 15-second audio affirmation based on user input about their desired relationship outcome.
  *
  * - generatePersonalizedMelody - A function that handles the melody generation process.
  * - GeneratePersonalizedMelodyInput - The input type for the generatePersonalizedMelody function.
@@ -9,18 +9,19 @@
  */
 
 import {ai} from '@/ai/genkit';
+import {googleAI} from '@genkit-ai/google-genai';
 import {z} from 'genkit';
 import wav from 'wav';
 
 const GeneratePersonalizedMelodyInputSchema = z.string().describe(
-  'Details about your desired relationship outcome.  The AI will use these details to generate a unique 5-minute melody tailored to influence your state of mind and attract that outcome.'
+  'Details about your desired relationship outcome.  The AI will use these details to generate a unique 15-second audio affirmation tailored to influence your state of mind and attract that outcome.'
 );
 export type GeneratePersonalizedMelodyInput = z.infer<
   typeof GeneratePersonalizedMelodyInputSchema
 >;
 
 const GeneratePersonalizedMelodyOutputSchema = z.object({
-  media: z.string().describe('The generated melody as a data URI.'),
+  media: z.string().describe('The generated audio as a data URI.'),
 });
 export type GeneratePersonalizedMelodyOutput = z.infer<
   typeof GeneratePersonalizedMelodyOutputSchema
@@ -76,7 +77,7 @@ const generatePersonalizedMelodyFlow = ai.defineFlow(
           },
         },
       },
-      prompt: `Compose a 5-minute melody suitable for attracting the desired relationship outcome described: ${input}`,
+      prompt: `Generate a 15-second audio affirmation for the following desired relationship outcome: ${input}`,
     });
     if (!media) {
       throw new Error('no media returned');
@@ -90,5 +91,3 @@ const generatePersonalizedMelodyFlow = ai.defineFlow(
     };
   }
 );
-
-import {googleAI} from '@genkit-ai/googleai';
