@@ -18,7 +18,7 @@ export function AuthorityLogos() {
               alt={logo.name}
               width={111}
               height={114}
-              className="object-contain grayscale opacity-60"
+              className="object-contain"
             />
           ))}
         </div>
