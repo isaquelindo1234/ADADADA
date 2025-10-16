@@ -37,7 +37,7 @@ export function MidPageOfferSection() {
           {/* Visual Column */}
           <div className="flex justify-center items-center">
               <img
-                src="https://i.postimg.cc/d1MwzR3r/New-Mockup.png"
+                src="https://i.postimg.cc/yxhqBBWj/Whisk-5def57aea14cccebbc347a165bbe7b1ddr-removebg-preview.png"
                 alt="Mockup do Produto Pulso del Amor"
                 width={400}
                 height={400}
