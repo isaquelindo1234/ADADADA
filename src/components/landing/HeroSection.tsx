@@ -30,7 +30,7 @@ export function HeroSection() {
           </p>
           
           <h1 className="text-3xl sm:text-4xl font-headline font-extrabold text-white leading-tight mb-4">
-            Y haz que tu ex regrese<br/> corriendo a tus brazos
+            Existe un 'interruptor de arrepentimiento' en el cerebro masculino.<br/> Pocas mujeres saben cómo activarlo.
           </h1>
           
           <p className="text-base md:text-lg text-white/80 font-body max-w-sm mx-auto leading-relaxed mb-6">
