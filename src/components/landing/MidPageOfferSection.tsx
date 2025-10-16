@@ -1,6 +1,6 @@
 'use client';
 
-import { CheckCircle2, Gift, Sparkles, ShieldCheck, Lock, CircleCheckBig } from 'lucide-react';
+import { CheckCircle2, Gift, Sparkles, ShieldCheck, Lock, CircleCheckBig, ShieldAlert } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export function MidPageOfferSection() {
@@ -77,8 +77,16 @@ export function MidPageOfferSection() {
                   SÍ, QUIERO EL PODER PARA CONQUISTARLO
               </Button>
             </a>
+
+            <div className="bg-card border border-muted rounded-lg p-4 flex items-center gap-4 my-6">
+                <ShieldAlert className="h-12 w-12 text-primary flex-shrink-0" />
+                <div>
+                    <h4 className="font-bold text-white">Garantía Incondicional de 30 Días</h4>
+                    <p className="text-sm text-muted-foreground">Si no estás 100% satisfecha, te devolvemos todo tu dinero. Sin preguntas, sin complicaciones. Tu compra es 100% libre de riesgo.</p>
+                </div>
+            </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 text-center mt-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 text-center">
                 {trustElements.map((item, index) => (
                     <div key={index} className="flex items-center justify-center gap-2">
                     {item.icon}
