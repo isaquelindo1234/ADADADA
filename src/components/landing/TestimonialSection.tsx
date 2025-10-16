@@ -46,7 +46,7 @@ export function TestimonialSection() {
           <div className="aspect-w-9 aspect-h-16 rounded-lg overflow-hidden border-2 border-primary/50 glowing-shadow bg-black">
             <video
               className="w-full h-full"
-              src="https://youtube.com/shorts/p-2kxZGJuVk?si=xVfk8850s-4AjXgj" // Você pode substituir esta URL pela do seu vídeo auto-hospedado
+              src="https://youtube.com/shorts/p-2kxZGJuVk?si=51AMsvuuZnUTv0LZ" // Você pode substituir esta URL pela do seu vídeo auto-hospedado
               controls
               playsInline
               poster="https://i.ytimg.com/vi/p-2kxZGJuVk/maxresdefault.jpg" // Opcional: uma imagem de placeholder
