@@ -40,8 +40,7 @@ export function HeroSection() {
       <div className="container mx-auto px-4 flex flex-col items-center">
         <div className="max-w-2xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-headline font-bold text-white leading-tight mb-6">
-            Y si el <span className="text-primary">'TERMINAMOS'</span>... <br />
-            No fuera el final, sino el <span className="underline decoration-primary">comienzo</span> de tu poder?
+            Existe un 'interruptor de arrepentimiento' en el cerebro masculino. <br /> Pocas mujeres saben cómo activarlo.
           </h1>
           <div
             className="wistia_responsive_padding"
