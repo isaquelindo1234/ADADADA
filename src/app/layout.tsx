@@ -23,17 +23,16 @@ export default function RootLayout({
         <Script src="https://fast.wistia.com/player.js" async />
       </head>
       <body className="font-body antialiased bg-background">
-        <Script id="utmify-pixel" strategy="lazyOnload">
+        <Script id="utmify-pixel" strategy="afterInteractive">
           {`
             window.pixelId = "68d4384396d6eb6fca9c6acc";
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+            document.head.appendChild(a);
           `}
         </Script>
-        <Script
-          src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"
-          strategy="lazyOnload"
-          async
-          defer
-        />
         {children}
         <Toaster />
       </body>
