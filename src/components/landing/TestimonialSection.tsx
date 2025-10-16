@@ -40,22 +40,24 @@ export function TestimonialSection() {
             Mujeres Reales, Resultados Reales
           </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-start">
-          
-          <div className="sm:col-span-2 lg:col-span-1 lg:row-span-2">
-            <div className="aspect-w-9 aspect-h-16 rounded-lg overflow-hidden border-2 border-primary/50 glowing-shadow">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/p-2kxZGJuVk"
-                title="Depoimento em Vídeo"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+        
+        {/* Video Testimonial */}
+        <div className="max-w-xs mx-auto mb-12">
+          <div className="aspect-w-9 aspect-h-16 rounded-lg overflow-hidden border-2 border-primary/50 glowing-shadow">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/p-2kxZGJuVk"
+              title="Depoimento em Vídeo"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
-          
-          {testimonials.slice(0, 2).map((testimonial, index) => (
+        </div>
+
+        {/* Text Testimonials */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {testimonials.map((testimonial, index) => (
             <div key={index} className="flex flex-col items-center text-center p-6 rounded-lg bg-background transform transition-transform duration-300 hover:-translate-y-1">
               <p className="font-semibold text-white font-body mb-2">
                 {testimonial.name}
@@ -70,23 +72,6 @@ export function TestimonialSection() {
               </p>
             </div>
           ))}
-
-          {testimonials.slice(2).map((testimonial, index) => (
-            <div key={index + 2} className="flex flex-col items-center text-center p-6 rounded-lg bg-background transform transition-transform duration-300 hover:-translate-y-1">
-              <p className="font-semibold text-white font-body mb-2">
-                {testimonial.name}
-              </p>
-              <div className="flex my-2">
-                {[...Array(testimonial.stars)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <p className="text-muted-foreground text-sm font-body italic">
-                "{testimonial.text}"
-              </p>
-            </div>
-          ))}
-
         </div>
       </div>
     </section>
@@ -97,8 +82,8 @@ export function TestimonialSection() {
 // This is a simple implementation. For production, consider using @tailwindcss/aspect-ratio plugin
 const AspectRatioPlugin = () => (
   <style jsx global>{`
-    .aspect-w-9 { --aspect-ratio: 9/16; }
-    .aspect-h-16 { padding-bottom: calc(var(--aspect-ratio) * 100%); }
+    .aspect-w-9 { position: relative; padding-bottom: calc(9 / 16 * 100%); }
+    .aspect-h-16 { position: relative; padding-bottom: calc(16 / 9 * 100%); }
     .aspect-w-9 > *, .aspect-h-16 > * { position: absolute; height: 100%; width: 100%; top: 0; right: 0; bottom: 0; left: 0; }
   `}</style>
 );
