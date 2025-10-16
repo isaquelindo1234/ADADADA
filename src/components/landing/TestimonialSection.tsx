@@ -17,7 +17,7 @@ const testimonials = [
     name: "Valentina R.",
     stars: 5,
     text: "No puedo creerlo. Dos días después de empezar a escuchar, me escribió. Dijo que no podía dejar de pensar en mí. ¡Esto es increíble!",
-    image: "https://i.pinimg.com/736x/a0/44/e0/a044e065abf7dccec2f336a5cf8925f5.jpg",
+    image: "https://i.pinimg.com/736x/b9/3c/5e/b93c5ed12332b032114b2e5926fc9538.jpg",
     imageAlt: "Testimonio en chat 1"
   },
   {
