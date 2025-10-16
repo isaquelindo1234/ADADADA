@@ -1,3 +1,4 @@
+
 'use client';
 
 import * as React from "react";
@@ -16,22 +17,36 @@ const testimonials = [
     name: "Valentina R.",
     stars: 5,
     text: "No puedo creerlo. Dos días después de empezar a escuchar, me escribió. Dijo que no podía dejar de pensar en mí. ¡Esto es increíble!",
-    image: "https://i.postimg.cc/W45QwW5W/image.png",
+    image: "https://i.pinimg.com/736x/a0/44/e0/a044e065abf7dccec2f336a5cf8925f5.jpg",
     imageAlt: "Testimonio en chat 1"
   },
   {
     name: "Sofía P.",
     stars: 5,
     text: "Estaba muy escéptica, pero desesperada. En una semana, la energía entre nosotros cambió por completo. Ahora estamos planeando vernos. ¡Gracias Elena!",
-    image: "https://i.postimg.cc/26sMgFkD/image.png",
+    image: "https://i.pinimg.com/1200x/7c/20/eb/7c20ebeb483371cf7515a463ad6191fe.jpg",
     imageAlt: "Testimonio en chat 2"
   },
   {
     name: "Camila G.",
     stars: 5,
     text: "Esto no solo trajo a mi ex de vuelta, sino que me siento más segura y magnética que nunca. Otras personas me notan más. Es como si tuviera un superpoder.",
-    image: "https://i.postimg.cc/W45QwW5W/image.png",
+    image: "https://i.pinimg.com/736x/47/77/b9/4777b9050fd3706ed66c6de7ac6d6254.jpg",
     imageAlt: "Testimonio en chat 3"
+  },
+  {
+    name: "Isabella L.",
+    stars: 5,
+    text: "Funcionó tal como dijo. Él apareció en mi puerta diciendo que había cometido un error. Estoy en shock, pero tan feliz. ¡Realmente funciona!",
+    image: "https://i.pinimg.com/736x/2f/93/69/2f936975cf94c13fc7cdaeb8f655cae7.jpg",
+    imageAlt: "Testimonio en chat 4"
+  },
+  {
+    name: "Martina C.",
+    stars: 5,
+    text: "Me siento diferente, más en paz y poderosa. Y él lo notó. Nuestra comunicación ha mejorado 100% y estamos más unidos que antes.",
+    image: "https://i.pinimg.com/736x/a0/44/e0/a044e065abf7dccec2f336a5cf8925f5.jpg",
+    imageAlt: "Testimonio en chat 5"
   },
 ];
 
