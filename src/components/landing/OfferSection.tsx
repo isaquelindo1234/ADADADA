@@ -2,22 +2,8 @@
 
 import { CheckCircle2, Gift, Radio, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useEffect, useState } from 'react';
-
-// SET THE TIME (in seconds) for the offer to appear after the page loads.
-const OFFER_APPEAR_TIME_IN_SECONDS = 230; // 3 minutes and 50 seconds
 
 export function OfferSection() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, OFFER_APPEAR_TIME_IN_SECONDS * 1000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   const deliverables = [
     { name: 'Acceso vitalicio a las Frecuencias Principales', icon: <CheckCircle2 className="text-primary" /> },
     { name: 'Biblioteca de Audios de Reprogramación', icon: <CheckCircle2 className="text-primary" /> },
@@ -26,12 +12,8 @@ export function OfferSection() {
     { name: '+ 5 Bonos Misteriosos', icon: <Gift className="text-primary" /> },
   ];
 
-  if (!isVisible) {
-    return null;
-  }
-
   return (
-    <section id="offer" className="py-12 md:py-16 bg-background animate-in fade-in duration-700">
+    <section id="offer" className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto bg-card border border-primary/30 rounded-2xl p-6 md:p-10 shadow-2xl glowing-shadow">
           <div className="text-center mb-8">
