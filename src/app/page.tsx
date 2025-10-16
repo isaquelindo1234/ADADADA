@@ -5,6 +5,7 @@ import { HowItWorksSection } from '@/components/landing/HowItWorksSection';
 import { TestimonialSection } from '@/components/landing/TestimonialSection';
 import { TrustBar } from '@/components/landing/TrustBar';
 import { MidPageOfferSection } from '@/components/landing/MidPageOfferSection';
+import { Footer } from '@/components/landing/Footer';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <TestimonialSection />
         <FaqSection />
       </main>
+      <Footer />
     </div>
   );
 }

@@ -52,7 +52,7 @@ export function FaqSection() {
                         <AccordionTrigger className="text-left font-semibold font-body text-base md:text-lg text-white hover:no-underline py-5">
                             {faq.question}
                         </AccordionTrigger>
-                        <AccordionContent className="text-muted-foreground font-body leading-relaxed pb-5 text-sm">
+                        <AccordionContent className="text-muted-foreground font-body leading-relaxed pb-5 text-sm md:text-base">
                             {faq.answer}
                         </AccordionContent>
                     </AccordionItem>

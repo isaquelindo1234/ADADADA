@@ -22,7 +22,7 @@ export function SpecialistSection() {
               />
             </div>
             <div className="md:col-span-2 space-y-4 text-center md:text-left">
-              <p className="text-muted-foreground italic text-lg">
+              <p className="text-muted-foreground italic text-lg md:text-xl">
                 "Durante años, vi a mujeres brillantes sufrir por desamor, atrapadas en ciclos de dolor. La ciencia nos muestra que la atracción va más allá de las palabras; reside en nuestra energía. Creé 'Pulso del Amor' para darles una herramienta real y poderosa, basada en la física de las frecuencias, para reclamar su poder y reescribir su historia de amor."
               </p>
               <div>
@@ -35,7 +35,7 @@ export function SpecialistSection() {
                   className="mx-auto md:mx-0"
                   data-ai-hint="signature"
                 />
-                <p className="font-semibold text-white">Elena Navarro</p>
+                <p className="font-semibold text-white text-lg">Elena Navarro</p>
                 <p className="text-sm text-primary">Especialista en Bio-frecuencias y Relaciones</p>
               </div>
             </div>
