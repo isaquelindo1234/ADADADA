@@ -13,8 +13,8 @@ export default function Home() {
     <div className="flex min-h-screen flex-col bg-background overflow-x-hidden">
       <main className="flex-1">
         <HeroSection />
-        <AuthorityBar />
         <OfferSection />
+        <AuthorityBar />
         <TrustBar />
         <HowItWorksSection />
         <SpecialistSection />
