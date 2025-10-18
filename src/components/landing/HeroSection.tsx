@@ -1,6 +1,7 @@
 'use client';
 
 import Script from 'next/script';
+import { ProgressBar } from './ProgressBar';
 
 export function HeroSection() {
   return (
@@ -26,6 +27,7 @@ export function HeroSection() {
             </style>
             <wistia-player media-id="335vqtv9ut" aspect="0.5625"></wistia-player>
           </div>
+          <ProgressBar />
         </div>
       </div>
     </section>
