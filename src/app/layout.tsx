@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
 import Script from 'next/script';
+import { UtmifyPixel } from '@/components/UtmifyPixel';
 
 export const metadata: Metadata = {
   title: 'Pulso del Amor',
@@ -20,25 +21,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
         <Script src="https://fast.wistia.com/assets/external/E-v1.js" async />
-        {/* INICIO PIXEL UTMIFY */}
-        <Script
-          id="utmify-base-script"
-          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-          data-utmify-prevent-xcod-sck
-          data-utmify-prevent-subids
-          strategy="beforeInteractive"
-        />
-        <Script id="utmify-pixel-loader" strategy="beforeInteractive">
-          {`
-            window.pixelId = "68f415f05f4cc7ef59d44a55";
-            var a = document.createElement("script");
-            a.setAttribute("async", "");
-            a.setAttribute("defer", "");
-            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-            document.head.appendChild(a);
-          `}
-        </Script>
-        {/* FIM PIXEL UTMIFY */}
+        <UtmifyPixel />
       </head>
       <body className="font-body antialiased bg-background">
         {children}
