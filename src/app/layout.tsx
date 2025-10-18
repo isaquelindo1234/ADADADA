@@ -26,9 +26,9 @@ export default function RootLayout({
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           data-utmify-prevent-xcod-sck
           data-utmify-prevent-subids
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
         />
-        <Script id="utmify-pixel-loader" strategy="afterInteractive">
+        <Script id="utmify-pixel-loader" strategy="beforeInteractive">
           {`
             window.pixelId = "68f415f05f4cc7ef59d44a55";
             var a = document.createElement("script");
