@@ -20,6 +20,25 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
         <Script src="https://fast.wistia.com/assets/external/E-v1.js" async />
+        {/* PIXEL UTMIFY - RASTREAMENTO DE PAGEVIEW + IC (NÃO REMOVER) */}
+        <Script
+          id="utmify-base-script"
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
+          strategy="afterInteractive"
+        />
+        <Script id="utmify-pixel-loader" strategy="afterInteractive">
+          {`
+            window.pixelId = "68f31b1b41bbf871c3c5652f";
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+            document.head.appendChild(a);
+          `}
+        </Script>
+        {/* FIM PIXEL UTMIFY */}
       </head>
       <body className="font-body antialiased bg-background">
         {children}
