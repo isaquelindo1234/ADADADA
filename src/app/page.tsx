@@ -37,7 +37,7 @@ export default function Home() {
           </>
         )}
       </main>
-      {showContent && <Footer />}
+      <Footer />
     </div>
   );
 }
