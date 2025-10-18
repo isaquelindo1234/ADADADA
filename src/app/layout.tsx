@@ -19,15 +19,19 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+        
+        {/* Wistia Scripts */}
         <Script src="https://fast.wistia.com/assets/external/E-v1.js" async />
         <Script src="https://fast.wistia.com/player.js" async />
-        <script
+
+        {/* Utmify Scripts */}
+        <Script
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           data-utmify-prevent-xcod-sck
           data-utmify-prevent-subids
           async
           defer
-        ></script>
+        ></Script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -58,7 +62,7 @@ export default function RootLayout({
 
       // Monta payload com validações mínimas
       var payload = {
-        pixel_id: window.pixelId, // verificar se o endpoint espera 'pixel_id'
+        pixel_id: window.pixelId,
         event: eventName || "page_view",
         timestamp: new Date().toISOString(),
         url: location.href,
@@ -67,7 +71,7 @@ export default function RootLayout({
         data: eventData || {}
       };
 
-      // Debug (apenas em dev). Remover em produção
+      // Debug (apenas em dev)
       if (location.hostname.includes("dev") || location.hostname.includes("localhost") || location.hostname.includes("firebaseapp") || location.hostname.includes("workstations.dev")) {
         console.info("UTMify -> enviando payload:", payload);
       }
@@ -81,7 +85,6 @@ export default function RootLayout({
         credentials: "omit"
       });
 
-      // Tenta parsear o body com cautela
       var text = await resp.text();
       var json;
       try {
@@ -92,17 +95,13 @@ export default function RootLayout({
 
       if (!resp.ok) {
         console.error("UTMify -> status:", resp.status, "response:", text);
-        // Não acesse json._id sem checar
         return;
       }
 
-      // Segurança: só acesse propriedades se json existir
-      if (json && typeof json === "object") {
-        if (json._id) {
-          console.info("UTMify -> evento registrado, id:", json._id);
-        } else {
-          console.warn("UTMify -> resposta válida mas sem _id:", json);
-        }
+      if (json && typeof json === "object" && json._id) {
+        console.info("UTMify -> evento registrado, id:", json._id);
+      } else if (json) {
+        console.warn("UTMify -> resposta válida mas sem _id:", json);
       } else {
         console.warn("UTMify -> resposta OK mas body vazio ou não-JSON");
       }
@@ -111,7 +110,7 @@ export default function RootLayout({
     }
   }
 
-  // Exemplo: enviar evento page_view após DOMContentLoaded
+  // Enviar evento page_view quando a página estiver pronta
   if (document.readyState === 'complete') {
     sendTrackingEvent("page_view", { hostname: location.hostname });
   } else {
@@ -120,12 +119,38 @@ export default function RootLayout({
     });
   }
 
-  // Expor função para o resto do app (se necessário)
+  // Expor função para o resto do app
   window.utmifySendEvent = sendTrackingEvent;
 })();
           `,
           }}
         />
+
+        {/* Meta Pixel Code */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '754496340898838');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent');
+`,
+          }}
+        />
+        <noscript>
+          <img height="1" width="1" style={{display: 'none'}}
+               src="https://www.facebook.com/tr?id=754496340898838&ev=PageView&noscript=1"
+          />
+        </noscript>
+        {/* End Meta Pixel Code */}
+
       </head>
       <body className="font-body antialiased bg-background">
         {children}
