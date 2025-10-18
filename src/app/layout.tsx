@@ -21,27 +21,27 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
         <Script src="https://fast.wistia.com/assets/external/E-v1.js" async />
         <Script src="https://fast.wistia.com/player.js" async />
+        <script
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
+          async
+          defer
+        ></script>
+        <script>
+          {`
+            window.pixelId = "68f31b1b41bbf871c3c5652f";
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+            document.head.appendChild(a);
+          `}
+        </script>
       </head>
       <body className="font-body antialiased bg-background">
         {children}
         <Toaster />
-        <Script
-          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-          data-utmify-prevent-xcod-sck
-          data-utmify-prevent-subids
-          strategy="lazyOnload"
-        ></Script>
-        <Script id="utmify-pixel" strategy="lazyOnload">
-          {`
-            window.pixelId = "68d4384396d6eb6fca9c6acc";
-            (function () {
-              var a = document.createElement("script");
-              a.async = true; a.defer = true;
-              a.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
-              document.head.appendChild(a);
-            })();
-          `}
-        </Script>
       </body>
     </html>
   );
