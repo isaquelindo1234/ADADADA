@@ -9,6 +9,7 @@ import { TestimonialSection } from '@/components/landing/TestimonialSection';
 import { MidPageOfferSection } from '@/components/landing/MidPageOfferSection';
 import { Footer } from '@/components/landing/Footer';
 import { AuthorityLogos } from '@/components/landing/AuthorityLogos';
+import { AdvancedTracking } from '@/components/landing/AdvancedTracking';
 
 export default function Home() {
   const [showContent, setShowContent] = useState(false);
@@ -23,6 +24,7 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
+      <AdvancedTracking />
       <main className="flex-1">
         <HeroSection />
         <AuthorityLogos />
