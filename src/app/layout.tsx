@@ -33,7 +33,7 @@ export default function RootLayout({
           async
           defer
         ></Script>
-        <script
+        <Script
           id="utmify-pixel-tracker"
           dangerouslySetInnerHTML={{
             __html: `
@@ -129,7 +129,9 @@ export default function RootLayout({
         />
 
         {/* Meta Pixel Code */}
-        <script
+        <Script
+          id="fb-pixel"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
 !function(f,b,e,v,n,t,s)
