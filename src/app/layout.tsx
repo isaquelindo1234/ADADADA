@@ -26,6 +26,7 @@ export default function RootLayout({
 
         {/* Utmify Scripts */}
         <Script
+          id="utmify-base"
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           data-utmify-prevent-xcod-sck
           data-utmify-prevent-subids
@@ -33,6 +34,7 @@ export default function RootLayout({
           defer
         ></Script>
         <script
+          id="utmify-pixel-tracker"
           dangerouslySetInnerHTML={{
             __html: `
 (function() {
