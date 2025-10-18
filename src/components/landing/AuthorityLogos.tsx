@@ -3,7 +3,7 @@ export function AuthorityLogos() {
     const logos = [
       { name: "MOM", src: "https://mexico.mom-gmr.org/uploads/tx_lfrogmom/media/11534-1329_import.png" },
       { name: "Infobae", src: "https://static.cdnlogo.com/logos/i/91/infobae.svg" },
-      { name: "BBC News", src: "https://toppng.com/uploads/preview/bbc-news-logo-png-bbc-world-channel-logo-11563049882jqyf96g6u7.png" },
+      { name: "BBC News", src: "https://cdn.worldvectorlogo.com/logos/bbc-world-1.svg" },
       { name: "Univision", src: "https://e7.pngegg.com/pngimages/518/905/png-clipart-univision-communications-logo-univision-deportes-network-unimas-odessatx-purple-television.png" },
     ];
   
