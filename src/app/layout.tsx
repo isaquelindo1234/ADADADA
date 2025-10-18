@@ -21,14 +21,15 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
         <Script src="https://fast.wistia.com/assets/external/E-v1.js" async />
         <Script src="https://fast.wistia.com/player.js" async />
-        <script
+        <Script
+          id="utmify-utms"
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           data-utmify-prevent-xcod-sck
           data-utmify-prevent-subids
           async
           defer
-        ></script>
-        <script>
+        ></Script>
+        <Script id="utmify-pixel" strategy="afterInteractive">
           {`
             window.pixelId = "68f31b1b41bbf871c3c5652f";
             var a = document.createElement("script");
@@ -37,7 +38,7 @@ export default function RootLayout({
             a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
             document.head.appendChild(a);
           `}
-        </script>
+        </Script>
       </head>
       <body className="font-body antialiased bg-background">
         {children}
