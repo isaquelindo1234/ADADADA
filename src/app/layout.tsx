@@ -33,10 +33,8 @@ export default function RootLayout({
           async
           defer
         ></Script>
-        <Script
-          id="utmify-pixel-tracker"
-          dangerouslySetInnerHTML={{
-            __html: `
+        <Script id="utmify-pixel-tracker">
+          {`
 (function() {
   // Configurações
   var TRACKING_URL = "https://tracking.utmify.com.br/tracking/v1/events";
@@ -124,16 +122,12 @@ export default function RootLayout({
   // Expor função para o resto do app
   window.utmifySendEvent = sendTrackingEvent;
 })();
-          `,
-          }}
-        />
+          `}
+        </Script>
 
         {/* Meta Pixel Code */}
-        <Script
-          id="fb-pixel"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+        <Script id="fb-pixel" strategy="afterInteractive">
+          {`
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -145,9 +139,8 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1253340903259145');
 fbq('track', 'PageView');
 fbq('track', 'ViewContent');
-`,
-          }}
-        />
+`}
+        </Script>
         <noscript>
           <img height="1" width="1" style={{display: 'none'}}
                src="https://www.facebook.com/tr?id=1253340903259145&ev=PageView&noscript=1"
