@@ -20,6 +20,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
         <Script src="https://fast.wistia.com/assets/external/E-v1.js" async />
+        
+        {/* Utmify Scripts */}
         <Script
           id="utmify-base-script"
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
@@ -28,16 +30,19 @@ export default function RootLayout({
           async
           defer
         />
-        <Script id="utmify-pixel-loader" strategy="afterInteractive">
-          {`
-            window.pixelId = "68f415f05f4cc7ef59d44a55";
-            var a = document.createElement("script");
-            a.setAttribute("async", "");
-            a.setAttribute("defer", "");
-            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-            document.head.appendChild(a);
-          `}
-        </Script>
+        <script
+          id="utmify-pixel-loader"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.pixelId = "68f415f05f4cc7ef59d44a55";
+              var a = document.createElement("script");
+              a.setAttribute("async", "");
+              a.setAttribute("defer", "");
+              a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+              document.head.appendChild(a);
+            `,
+          }}
+        />
       </head>
       <body className="font-body antialiased bg-background">
         {children}
