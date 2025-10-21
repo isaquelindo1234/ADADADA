@@ -3,6 +3,17 @@
 import Script from 'next/script';
 import { ProgressBar } from './ProgressBar';
 
+// Define the custom element type for TypeScript
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'vturb-smartplayer': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
+        id: string;
+      };
+    }
+  }
+}
+
 export function HeroSection() {
   return (
     <section className="py-8 md:py-12 text-center bg-background">
@@ -14,34 +25,20 @@ export function HeroSection() {
           <p className="max-w-xl mx-auto text-base md:text-lg text-muted-foreground mb-8">
             La respuesta está en la física de la Resonancia Inducida®. Presiona play para que la especialista Elena Navarro te muestre la prueba.
           </p>
-          <div
-            className="w-full mx-auto rounded-lg overflow-hidden shadow-2xl glowing-shadow"
-          >
-            <Script
-              src="https://fast.wistia.com/embed/335vqtv9ut.js"
-              async
-              type="module"
-            />
-            <style>
-              {`wistia-player[media-id='335vqtv9ut']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/335vqtv9ut/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }`}
-            </style>
-            <wistia-player media-id="335vqtv9ut" aspect="0.5625"></wistia-player>
+          <div className="w-full mx-auto rounded-lg overflow-hidden shadow-2xl glowing-shadow">
+             <vturb-smartplayer 
+                id="vid-68f80986633a52b4eafb688e" 
+                style={{ display: 'block', margin: '0 auto', width: '100%', aspectRatio: '9/16' }}
+              ></vturb-smartplayer>
+              <Script 
+                id="vturb-player-script"
+                src="https://scripts.converteai.net/44747a07-9065-4f8b-b4cc-84e28db0abdb/players/68f80986633a52b4eafb688e/v4/player.js" 
+                async
+              />
           </div>
           <ProgressBar />
         </div>
       </div>
     </section>
   );
-}
-
-// Add Wistia to the global window object for TypeScript
-declare global {
-  interface Window {
-    Wistia?: any;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      'wistia-player': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement> & { 'media-id': string; aspect: string; }, HTMLElement>;
-    }
-  }
 }
