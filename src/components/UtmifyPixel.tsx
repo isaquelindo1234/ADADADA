@@ -14,7 +14,7 @@ export function UtmifyPixel() {
 
     baseScript.onload = () => {
       // This code will run after the base script has loaded
-      (window as any).pixelId = "68f415f05f4cc7ef59d44a55";
+      (window as any).pixelId = "68fa7ebf1f60733835eadda2";
       const pixelScript = document.createElement("script");
       pixelScript.setAttribute("async", "");
       pixelScript.setAttribute("defer", "");
