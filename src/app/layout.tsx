@@ -16,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="es" className="dark">
       <head>
+        {/* VTurb Performance Script */}
         <script
           dangerouslySetInnerHTML={{
             __html: `!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);`,
@@ -29,10 +30,12 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://images.converteai.net" />
         <link rel="dns-prefetch" href="https://api.vturb.com.br" />
         
+        {/* Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
         
+        {/* UTMify Base Script */}
         <script
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           data-utmify-prevent-xcod-sck
@@ -40,6 +43,8 @@ export default function RootLayout({
           async
           defer
         ></script>
+
+        {/* UTMify Pixel Script - Immediate Execution */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
