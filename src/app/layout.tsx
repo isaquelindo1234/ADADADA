@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
-import { UtmifyPixel } from '@/components/UtmifyPixel';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
@@ -33,7 +32,26 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-        <UtmifyPixel />
+        
+        <script
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
+          async
+          defer
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.pixelId = "68fa7ebf1f60733835eadda2";
+              var a = document.createElement("script");
+              a.setAttribute("async", "");
+              a.setAttribute("defer", "");
+              a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+              document.head.appendChild(a);
+            `,
+          }}
+        />
       </head>
       <body className="font-body antialiased bg-background">
         {children}
