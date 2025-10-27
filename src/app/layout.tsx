@@ -46,7 +46,7 @@ export default function RootLayout({
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-              window.pixelId = "68fa7ebf1f60733835eadda2";
+              window.pixelId = "68ffbc0e619701dfea3e2db8";
               var a = document.createElement("script");
               a.setAttribute("async", "");
               a.setAttribute("defer", "");
