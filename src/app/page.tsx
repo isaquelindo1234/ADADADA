@@ -26,7 +26,8 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowContent(true);
-      // When content becomes visible, tell UTMify to re-scan the page
+      // When content becomes visible, check if utmify is loaded and then re-scan the page.
+      // This ensures events are tracked for dynamically loaded content.
       if (window.utmify && typeof window.utmify.run === 'function') {
         window.utmify.run();
       }
