@@ -41,20 +41,6 @@ export function TestimonialSection() {
           </h2>
         </div>
         
-        {/* Video Testimonial Player */}
-        <div className="max-w-xs mx-auto mb-12">
-          <div className="aspect-w-9 aspect-h-16 rounded-lg overflow-hidden border-2 border-primary/50 glowing-shadow bg-black">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/p-2kxZGJuVk"
-              title="Depoimento em Vídeo do YouTube"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-
         {/* Text Testimonials */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
