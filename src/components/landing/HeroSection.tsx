@@ -23,7 +23,7 @@ export function HeroSection() {
             El truco psicológico de <span className="text-primary">1 minuto</span> para 'burlar' su ego y hacer que su <span className="text-primary">INSTINTO</span> le ordene a su <span className="text-primary">CORAZÓN</span> amarte solo a ti.
           </h1>
           <p className="max-w-xl mx-auto text-base md:text-lg text-muted-foreground mb-8">
-            La respuesta está en la física de la Resonancia Inducida®. Presiona play para que la especialista Elena Navarro te muestre la prueba.
+            Existe una herramienta que activa este 'comando' biológico. Presiona play y descubre cómo usarla en 1 minuto al día.
           </p>
           <div className="w-full mx-auto rounded-lg overflow-hidden shadow-2xl glowing-shadow">
              <vturb-smartplayer 
