@@ -70,7 +70,7 @@ export function MidPageOfferSection() {
               <p className='text-xs text-muted-foreground mt-1'>(El valor será convertido a tu moneda local en el checkout)</p>
             </div>
 
-            <a href="https://pay.mundpay.com/01997cb3-78e8-7291-b9d5-b4a27fc0f595?ref=" target="_blank" rel="noopener noreferrer">
+            <a href="https://pay.hotmart.com/E101916835T?off=yz79pc5o&checkoutMode=10" target="_blank" rel="noopener noreferrer">
               <Button
                   size="lg"
                   className="w-full h-auto py-4 text-lg md:text-xl font-bold btn-glow btn-gradient mb-6 leading-tight whitespace-normal"
