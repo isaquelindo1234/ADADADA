@@ -22,9 +22,9 @@ export default function RootLayout({
             __html: `!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);`,
           }}
         />
-        <link rel="preload" href="https://scripts.converteai.net/44747a07-9065-4f8b-b4cc-84e28db0abdb/players/68f80986633a52b4eafb688e/v4/player.js" as="script" />
+        <link rel="preload" href="https://scripts.converteai.net/545bed94-28fd-4472-87bc-074c8f3e4048/players/690966de75d3a4ef1487eee0/v4/player.js" as="script" />
         <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script" />
-        <link rel="preload" href="https://cdn.converteai.net/44747a07-9065-4f8b-b4cc-84e28db0abdb/68f80912633a52b4eafb67fd/main.m3u8" as="fetch" />
+        <link rel="preload" href="https://cdn.converteai.net/545bed94-28fd-4472-87bc-074c8f3e4048/6909666275d3a4ef1487eec8/main.m3u8" as="fetch" />
         <link rel="dns-prefetch" href="https://cdn.converteai.net" />
         <link rel="dns-prefetch" href="https://scripts.converteai.net" />
         <link rel="dns-prefetch" href="https://images.converteai.net" />

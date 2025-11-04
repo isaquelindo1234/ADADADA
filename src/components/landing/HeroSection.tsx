@@ -27,12 +27,12 @@ export function HeroSection() {
           </p>
           <div className="w-full mx-auto rounded-lg overflow-hidden shadow-2xl glowing-shadow">
              <vturb-smartplayer 
-                id="vid-68f80986633a52b4eafb688e" 
-                style={{ display: 'block', margin: '0 auto', width: '100%', aspectRatio: '9/16' }}
+                id="vid-690966de75d3a4ef1487eee0" 
+                style={{ display: 'block', margin: '0 auto', width: '100%', maxWidth: '400px' }}
               ></vturb-smartplayer>
               <Script 
                 id="vturb-player-script"
-                src="https://scripts.converteai.net/44747a07-9065-4f8b-b4cc-84e28db0abdb/players/68f80986633a52b4eafb688e/v4/player.js" 
+                src="https://scripts.converteai.net/545bed94-28fd-4472-87bc-074c8f3e4048/players/690966de75d3a4ef1487eee0/v4/player.js" 
                 async
               />
           </div>
