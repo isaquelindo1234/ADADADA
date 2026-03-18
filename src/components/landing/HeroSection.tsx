@@ -11,7 +11,7 @@ export function HeroSection() {
             La manera poco conocida de hacer que cualquier persona escuche esta melodía durante 5 minutos.
           </h1>
           <p className="max-w-xl mx-auto text-base md:text-lg text-muted-foreground mb-8">
-            Existe una herramienta que activa este 'comando' biológico. Presiona play y descubre cómo usarla en 1 minuto al día.
+            Existe una herramienta que activa este 'comando' biológico. Presiona play y descubre cómo usarla.
           </p>
           <ProgressBar />
         </div>
