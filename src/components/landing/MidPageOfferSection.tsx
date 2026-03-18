@@ -11,7 +11,7 @@ export function MidPageOfferSection() {
     { name: 'Biblioteca de Audios de Reprogramación', icon: <CheckCircle2 className="text-primary" /> },
     { name: 'Acceso ilimitado a Iris (IA)', icon: <Sparkles className="text-primary" /> },
     { name: 'Guía de Inicio Rápido', icon: <CheckCircle2 className="text-primary" /> },
-    { name: '+ 5 Bonos Misteriosos', icon: <Gift className="text-primary" /> },
+    { name: '+ 5 Productos Misteriosos', icon: <Gift className="text-primary" /> },
   ];
 
   const trustElements = [
