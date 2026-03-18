@@ -1,18 +1,6 @@
 'use client';
 
-import Script from 'next/script';
 import { ProgressBar } from './ProgressBar';
-
-// Define the custom element type for TypeScript
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'vturb-smartplayer': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
-        id: string;
-      };
-    }
-  }
-}
 
 export function HeroSection() {
   return (
@@ -23,19 +11,8 @@ export function HeroSection() {
             El truco de <span className="text-primary">1 minuto</span> para 'burlar' su ego y grabar tu <span className="text-primary">"Asignatura Energética"</span> en su <span className="text-primary">corazón</span> (para que te <span className="text-primary">necesite solo a ti</span>).
           </h1>
           <p className="max-w-xl mx-auto text-base md:text-lg text-muted-foreground mb-8">
-            Existe una herramienta que activa este 'comando' biológico. Presiona play y descubre cómo usarla en 1 minuto al día.
+            Existe una herramienta que activa este 'comando' biológico. Descubre cómo usarla en 1 minuto al día.
           </p>
-          <div className="w-full mx-auto rounded-lg overflow-hidden shadow-2xl glowing-shadow">
-             <vturb-smartplayer 
-                id="vid-690966de75d3a4ef1487eee0" 
-                style={{ display: 'block', margin: '0 auto', width: '100%', maxWidth: '400px' }}
-              ></vturb-smartplayer>
-              <Script 
-                id="vturb-player-script"
-                src="https://scripts.converteai.net/545bed94-28fd-4472-87bc-074c8f3e4048/players/690966de75d3a4ef1487eee0/v4/player.js" 
-                async
-              />
-          </div>
           <ProgressBar />
         </div>
       </div>

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
-import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Pulso del Amor',
@@ -16,45 +15,10 @@ export default function RootLayout({
   return (
     <html lang="es" className="dark">
       <head>
-        {/* VTurb Performance Script */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);`,
-          }}
-        />
-        <link rel="preload" href="https://scripts.converteai.net/545bed94-28fd-4472-87bc-074c8f3e4048/players/690966de75d3a4ef1487eee0/v4/player.js" as="script" />
-        <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script" />
-        <link rel="preload" href="https://cdn.converteai.net/545bed94-28fd-4472-87bc-074c8f3e4048/6909666275d3a4ef1487eec8/main.m3u8" as="fetch" />
-        <link rel="dns-prefetch" href="https://cdn.converteai.net" />
-        <link rel="dns-prefetch" href="https://scripts.converteai.net" />
-        <link rel="dns-prefetch" href="https://images.converteai.net" />
-        <link rel="dns-prefetch" href="https://api.vturb.com.br" />
-        
         {/* Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-        
-        {/* UTMify Base & Pixel Scripts */}
-        <Script
-          id="utmify-base-script"
-          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-          strategy="beforeInteractive" 
-        />
-        <Script
-          id="utmify-pixel-script"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.pixelId = "68ffbc0e619701dfea3e2db8";
-              var a = document.createElement("script");
-              a.setAttribute("async", "");
-              a.setAttribute("defer", "");
-              a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-              document.head.appendChild(a);
-            `,
-          }}
-        />
       </head>
       <body className="font-body antialiased bg-background">
         {children}
