@@ -1,6 +1,15 @@
 'use client';
 
+import Script from 'next/script';
 import { ProgressBar } from './ProgressBar';
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'vturb-smartplayer': any;
+    }
+  }
+}
 
 export function HeroSection() {
   return (
@@ -13,6 +22,22 @@ export function HeroSection() {
           <p className="max-w-xl mx-auto text-base md:text-lg text-muted-foreground mb-8">
             Existe una herramienta que activa este 'comando' biológico. Presiona play y descubre cómo usarla.
           </p>
+
+          {/* VSL Video Container */}
+          <div className="w-full mb-8 flex justify-center">
+            <div className="w-full max-w-[400px]">
+              <vturb-smartplayer
+                id="vid-69bc114dd54d8d20f1012f08"
+                style={{ display: 'block', margin: '0 auto', width: '100%', maxWidth: '400px' }}
+              />
+              <Script
+                src="https://scripts.converteai.net/aa65ee97-137b-4cf6-a06b-e20a641d4cda/players/69bc114dd54d8d20f1012f08/v4/player.js"
+                strategy="afterInteractive"
+                async
+              />
+            </div>
+          </div>
+
           <ProgressBar />
         </div>
       </div>
