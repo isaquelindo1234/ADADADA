@@ -10,12 +10,24 @@ import { MidPageOfferSection } from '@/components/landing/MidPageOfferSection';
 import { Footer } from '@/components/landing/Footer';
 import { AuthorityLogos } from '@/components/landing/AuthorityLogos';
 
+declare global {
+  interface Window {
+    utmify?: {
+      run: () => void;
+    };
+  }
+}
+
 export default function Home() {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowContent(true);
+      // Dispara o rastreamento da UTMify para os novos elementos que apareceram
+      if (window.utmify && typeof window.utmify.run === 'function') {
+        window.utmify.run();
+      }
     }, 120000); // 120 segundos
 
     return () => clearTimeout(timer);

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
 
@@ -35,6 +36,26 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://api.vturb.com.br" />
       </head>
       <body className="font-body antialiased bg-background">
+        {/* UTMify Pixel Scripts */}
+        <Script id="utmify-pixel-init" strategy="afterInteractive">
+          {`
+            window.pixelId = "69bc28ee33dd302f657072a7";
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+            document.head.appendChild(a);
+          `}
+        </Script>
+        <Script 
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
+          strategy="afterInteractive"
+          async
+          defer
+        />
+        
         {children}
         <Toaster />
       </body>
