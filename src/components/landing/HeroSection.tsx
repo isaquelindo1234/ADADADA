@@ -2,6 +2,7 @@
 
 import Script from 'next/script';
 import { ProgressBar } from './ProgressBar';
+import { Button } from '@/components/ui/button';
 
 declare global {
   namespace JSX {
@@ -11,7 +12,11 @@ declare global {
   }
 }
 
-export function HeroSection() {
+interface HeroSectionProps {
+  showButton?: boolean;
+}
+
+export function HeroSection({ showButton }: HeroSectionProps) {
   return (
     <section className="py-8 md:py-12 text-center bg-background">
       <div className="container mx-auto px-4 flex flex-col items-center">
@@ -24,7 +29,7 @@ export function HeroSection() {
           </p>
 
           {/* VSL Video Container */}
-          <div className="w-full mb-8 flex justify-center">
+          <div className="w-full mb-6 flex justify-center">
             <div className="w-full max-w-[400px]">
               <vturb-smartplayer
                 id="vid-69bc114dd54d8d20f1012f08"
@@ -37,6 +42,28 @@ export function HeroSection() {
               />
             </div>
           </div>
+
+          {/* Delayed CTA Button */}
+          {showButton && (
+            <div className="w-full max-w-md mx-auto mb-8 animate-in fade-in zoom-in duration-500">
+              <a 
+                href="https://pay.mycheckoutt.com/019d063e-201b-7217-8984-6d1f03bc6857?ref=" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button
+                  size="lg"
+                  className="w-full h-auto py-5 text-xl md:text-2xl font-bold btn-glow btn-gradient rounded-full leading-tight whitespace-normal uppercase"
+                >
+                  SÍ, QUIERO EL PODER PARA CONQUISTARLO
+                </Button>
+              </a>
+              <p className="text-xs text-muted-foreground mt-3 flex items-center justify-center gap-2">
+                <span className="inline-block w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                Acceso inmediato disponible
+              </p>
+            </div>
+          )}
 
           <ProgressBar />
         </div>
