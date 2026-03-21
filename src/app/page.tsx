@@ -9,6 +9,7 @@ import { TestimonialSection } from '@/components/landing/TestimonialSection';
 import { MidPageOfferSection } from '@/components/landing/MidPageOfferSection';
 import { Footer } from '@/components/landing/Footer';
 import { AuthorityLogos } from '@/components/landing/AuthorityLogos';
+import { UrgencyBanner } from '@/components/landing/UrgencyBanner';
 
 declare global {
   interface Window {
@@ -35,6 +36,7 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
+      <UrgencyBanner />
       <main className="flex-1">
         <HeroSection showButton={showContent} />
         <AuthorityLogos />
