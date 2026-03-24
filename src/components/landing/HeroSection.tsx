@@ -32,11 +32,11 @@ export function HeroSection({ showButton }: HeroSectionProps) {
           <div className="w-full mb-6 flex justify-center">
             <div className="w-full max-w-[400px]">
               <vturb-smartplayer
-                id="vid-69bc114dd54d8d20f1012f08"
+                id="vid-69c1a5303d18cfb2430cacf4"
                 style={{ display: 'block', margin: '0 auto', width: '100%', maxWidth: '400px' }}
               />
               <Script
-                src="https://scripts.converteai.net/aa65ee97-137b-4cf6-a06b-e20a641d4cda/players/69bc114dd54d8d20f1012f08/v4/player.js"
+                src="https://scripts.converteai.net/aa65ee97-137b-4cf6-a06b-e20a641d4cda/players/69c1a5303d18cfb2430cacf4/v4/player.js"
                 strategy="afterInteractive"
                 async
               />
