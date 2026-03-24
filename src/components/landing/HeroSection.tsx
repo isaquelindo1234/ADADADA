@@ -47,7 +47,7 @@ export function HeroSection({ showButton }: HeroSectionProps) {
           {showButton && (
             <div className="w-full max-w-md mx-auto mb-8 animate-in fade-in zoom-in duration-500">
               <a 
-                href="https://pay.mycheckoutt.com/019d063e-201b-7217-8984-6d1f03bc6857?ref=" 
+                href="https://pay.hotmart.com/E101916835T?checkoutMode=10" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
