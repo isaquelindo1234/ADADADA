@@ -25,7 +25,7 @@ export function HeroSection({ showButton }: HeroSectionProps) {
             Descubre cómo hacer que él te extrañe, vaya tras de ti y suplique volver —<span className="text-primary">sin parecer desesperada ni perseguido.</span>
           </h1>
           <p className="max-w-xl mx-auto text-base md:text-lg text-muted-foreground mb-8">
-            (Funciona en 5 días o menos, incluso si él está frío o distante)
+            (Funciona en 5 días or menos, incluso si él está frío o distante)
           </p>
 
           {/* VSL Video Container */}
@@ -47,7 +47,7 @@ export function HeroSection({ showButton }: HeroSectionProps) {
           {showButton && (
             <div className="w-full max-w-md mx-auto mb-8 animate-in fade-in zoom-in duration-500">
               <a 
-                href="https://go.centerpag.com/PPU38CQ99S7" 
+                href="https://pay.mycheckoutt.com/019d063e-201b-7217-8984-6d1f03bc6857?ref=" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
