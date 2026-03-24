@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { SpecialistSection } from '@/components/landing/SpecialistSection';
 import { FaqSection } from '@/components/landing/FaqSection';
 import { HeroSection } from '@/components/landing/HeroSection';
 import { HowItWorksSection } from '@/components/landing/HowItWorksSection';
@@ -43,7 +42,6 @@ export default function Home() {
           <>
             <MidPageOfferSection />
             <HowItWorksSection />
-            <SpecialistSection />
             <TestimonialSection />
             <FaqSection />
           </>
