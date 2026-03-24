@@ -19,15 +19,15 @@ declare global {
 
 export default function Home() {
   const [showContent, setShowContent] = useState(false);
+  const delayMs = 380000; // 380 segundos
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowContent(true);
-      // Dispara o rastreamento da UTMify para os novos elementos que apareceram
       if (window.utmify && typeof window.utmify.run === 'function') {
         window.utmify.run();
       }
-    }, 380000); // 380 segundos
+    }, delayMs);
 
     return () => clearTimeout(timer);
   }, []);
