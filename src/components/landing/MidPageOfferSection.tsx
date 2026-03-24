@@ -1,4 +1,3 @@
-
 'use client';
 
 import { CheckCircle2, Gift, Sparkles, ShieldCheck, Lock, CircleCheckBig, ShieldAlert, Timer } from 'lucide-react';
@@ -70,7 +69,7 @@ export function MidPageOfferSection() {
               <p className='text-xs text-muted-foreground mt-1'>(El valor será convertido a tu moneda local en el checkout)</p>
             </div>
 
-            <a href="https://pay.mycheckoutt.com/019d063e-201b-7217-8984-6d1f03bc6857?ref=" target="_blank" rel="noopener noreferrer">
+            <a href="https://go.centerpag.com/PPU38CQ99S7" target="_blank" rel="noopener noreferrer">
               <Button
                   size="lg"
                   className="w-full h-auto py-4 text-lg md:text-xl font-bold btn-glow btn-gradient mb-6 leading-tight whitespace-normal"
@@ -83,7 +82,7 @@ export function MidPageOfferSection() {
                 <Timer className="h-10 w-10 text-yellow-400 flex-shrink-0" />
                 <div>
                     <h4 className="font-bold text-yellow-300">Atención: Oferta Limitada</h4>
-                    <p className="text-sm text-yellow-200/80">Esta oferta especial solo está disponible mientras esta página esté abierta. Si la cierras, podrías perder el acesso al precio promocional.</p>
+                    <p className="text-sm text-yellow-200/80">Esta oferta especial solo está disponible enquanto esta página estiver aberta. Se a fechar, poderá perder o acesso ao preço promocional.</p>
                 </div>
             </div>
             
