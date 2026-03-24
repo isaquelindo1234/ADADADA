@@ -27,7 +27,7 @@ export default function Home() {
       if (window.utmify && typeof window.utmify.run === 'function') {
         window.utmify.run();
       }
-    }, 120000); // 120 segundos
+    }, 380000); // 380 segundos
 
     return () => clearTimeout(timer);
   }, []);

@@ -5,7 +5,7 @@ import { Progress } from '@/components/ui/progress';
 export function ProgressBar() {
   const [progress, setProgress] = useState(0);
   const [showContent, setShowContent] = useState(false);
-  const delaySeconds = 120;
+  const delaySeconds = 380;
 
   useEffect(() => {
     const timer = setTimeout(() => {
