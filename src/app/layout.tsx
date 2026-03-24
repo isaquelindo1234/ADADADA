@@ -36,7 +36,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://api.vturb.com.br" />
       </head>
       <body className="font-body antialiased bg-background">
-        {/* UTMify Pixel Scripts */}
+        {/* UTMify Pixel Initialization Script */}
         <Script id="utmify-pixel-init" strategy="afterInteractive">
           {`
             window.pixelId = "69c1ed3b6c48588499b9dea5";
@@ -47,6 +47,8 @@ export default function RootLayout({
             document.head.appendChild(a);
           `}
         </Script>
+
+        {/* UTMify UTMs Script */}
         <Script 
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           data-utmify-prevent-xcod-sck
