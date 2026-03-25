@@ -2,8 +2,10 @@
 
 import { CheckCircle2, Gift, Sparkles, ShieldCheck, Lock, CircleCheckBig, Timer } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export function MidPageOfferSection() {
+  const offerBox = PlaceHolderImages.find(p => p.id === 'offer-box');
 
   const deliverables = [
     { name: 'Acceso vitalicio a las Frecuencias Principales', icon: <CheckCircle2 className="text-primary" /> },
@@ -35,15 +37,17 @@ export function MidPageOfferSection() {
           
           {/* Visual Column */}
           <div className="flex justify-center items-center">
-              <img
-                src="https://i.postimg.cc/yxhqBBWj/Whisk-5def57aea14cccebbc347a165bbe7b1ddr-removebg-preview.png"
-                alt="Mockup do Produto Pulso del Amor"
-                width="400"
-                height="400"
-                loading="lazy"
-                className="object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] w-full max-w-xs md:max-w-sm h-auto"
-                data-ai-hint="product box phone"
-              />
+              {offerBox && (
+                <img
+                  src={offerBox.imageUrl}
+                  alt={offerBox.description}
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  className="object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] w-full max-w-xs md:max-w-sm h-auto"
+                  data-ai-hint={offerBox.imageHint}
+                />
+              )}
             </div>
 
           {/* Details Column */}
