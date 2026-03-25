@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -57,7 +58,7 @@ export function InfoSection() {
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/5 bg-black min-h-[300px] flex items-center justify-center">
                 {isMounted ? (
                   <img
-                    src="https://i.imgur.com/hK7FIIM.gif"
+                    src="https://i.imgur.com/GTdHh1h.gif"
                     alt="Demonstração"
                     className="w-full h-auto object-cover"
                     loading="lazy"
