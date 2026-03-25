@@ -8,7 +8,7 @@
     },
     {
       "id": "benefit-woman",
-      "description": "Mujer con auriculares y energía a su alrededor",
+      "description": "Mujer con auriculares e energia a su redor",
       "imageUrl": "https://picsum.photos/seed/headphones-woman/600/700",
       "imageHint": "woman headphones"
     },
@@ -45,7 +45,7 @@
     {
       "id": "offer-box",
       "description": "Caja del producto Pulso del Amor",
-      "imageUrl": "https://i.postimg.cc/V65t6S4q/unnamed-3-removebg-preview.png",
+      "imageUrl": "https://i.postimg.cc/yxhqBBWj/Whisk-5def57aea14cccebbc347a165bbe7b1ddr-removebg-preview.png",
       "imageHint": "product box"
     }
   ]
