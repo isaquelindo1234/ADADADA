@@ -64,7 +64,7 @@ export function MidPageOfferSection() {
             <div className='text-center my-4'>
               <p className="text-lg text-muted-foreground font-body line-through">Precio Regular: $47 USD</p>
               <p className="text-5xl md:text-6xl font-headline font-bold text-white">
-                  HOY: solo $19 <span className="text-3xl md:text-4xl">USD</span>
+                  HOY: solo $9 <span className="text-3xl md:text-4xl">USD</span>
               </p>
               <p className='text-xs text-muted-foreground mt-1'>(El valor será convertido a tu moneda local en el checkout)</p>
             </div>
