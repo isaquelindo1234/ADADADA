@@ -22,7 +22,7 @@ export function InfoSection() {
                 Essa melodia é tão poderosa, que te dá uma <span className="text-white font-semibold">"vantagem injusta"</span> sobre os homens, e eu já te adianto. Se você não gosta de chamar atenção, ser vista e notada pelas pessoas, ou ser cortejada pelo seu homem é melhor não escutar...
               </p>
               <p>
-                Chega de perder tempo com coisas que não funcionam, contato zero, mensagem para conquistar, livros de autoajuda, ebooks que só te contam teorias vazias! Isso não vai te ajudar em nada, eu já fiz tudo o que você imaginou, até descobrir isso.
+                Chega de perder tempo com coisas que não funcionam, contato zero, mensagem para conquistar, livros de autoajuda, ebooks que só te contam teorias vazias! Isso não vai te ajudar em nada, eu já fez tudo o que você imaginou, até descobrir isso.
               </p>
             </div>
             <div className="relative group">
@@ -54,15 +54,13 @@ export function InfoSection() {
           
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="order-2 md:order-1 relative">
-              <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/5 bg-black">
+              <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/5 bg-black min-h-[300px] flex items-center justify-center">
                 {isMounted ? (
-                  <video
-                    src="https://i.imgur.com/hK7FIIM.mp4"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
+                  <img
+                    src="https://i.imgur.com/hK7FIIM.gif"
+                    alt="Demonstração"
                     className="w-full h-auto object-cover"
+                    loading="lazy"
                   />
                 ) : (
                   <div className="w-full aspect-video bg-black/20 animate-pulse" />
