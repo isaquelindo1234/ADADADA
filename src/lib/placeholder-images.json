@@ -2,7 +2,7 @@
   "placeholderImages": [
     {
       "id": "hero-audio-icon",
-      "description": "Ícono de audio con ondas de corazón",
+      "description": "Ícono de audio con ondas de coração",
       "imageUrl": "https://picsum.photos/seed/heroicon/180/180",
       "imageHint": "audio heart"
     },
@@ -15,7 +15,7 @@
     {
       "id": "contemplative-woman",
       "description": "Mujer pensativa o triste",
-      "imageUrl": "https://picsum.photos/seed/sad-woman-lp/600/700",
+      "imageUrl": "https://i.postimg.cc/CM6KShZF/image.png",
       "imageHint": "sad woman"
     },
     {
