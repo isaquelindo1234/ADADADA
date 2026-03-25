@@ -11,6 +11,14 @@ export function HeroSection() {
     }
   };
 
+  const avatars = [
+    "https://i.pinimg.com/1200x/28/bd/84/28bd841dd6356da9d14e37fb02a95126.jpg",
+    "https://i.pinimg.com/1200x/96/d9/1a/96d91ae72e36c0796d8baf20f3c94023.jpg",
+    "https://i.pinimg.com/736x/8a/56/49/8a56495baade23a10b21818977d52760.jpg",
+    "https://i.pinimg.com/736x/35/8e/e6/358ee60facb52cb06d14231e02f31007.jpg",
+    "https://i.pinimg.com/1200x/c1/16/f2/c116f2f4dbfcb98891430e1d476a83e9.jpg"
+  ];
+
   return (
     <section className="py-12 md:py-20 text-center bg-background relative overflow-hidden">
       <div className="container mx-auto px-4 flex flex-col items-center relative z-10">
@@ -34,12 +42,12 @@ export function HeroSection() {
         {/* Social Proof Avatars */}
         <div className="flex flex-col items-center gap-3">
           <div className="flex -space-x-2">
-            {[1, 2, 3, 4, 5].map((i) => (
+            {avatars.map((url, i) => (
               <img
                 key={i}
-                src={`https://picsum.photos/seed/${i + 10}/40/40`}
+                src={url}
                 alt="Usuaria satisfecha"
-                className="w-10 h-10 rounded-full border-2 border-background"
+                className="w-10 h-10 rounded-full border-2 border-background object-cover"
               />
             ))}
           </div>
