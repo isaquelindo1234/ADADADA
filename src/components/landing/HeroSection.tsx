@@ -24,7 +24,7 @@ export function HeroSection() {
               size="lg"
               className="w-full h-auto py-6 text-xl font-bold btn-glow btn-gradient rounded-full leading-tight uppercase"
             >
-              QUERO OUVIR A FREQUÊNCIA
+              QUIERO ESCUCHAR LA FRECUENCIA
             </Button>
           </a>
         </div>
@@ -36,7 +36,7 @@ export function HeroSection() {
               <img
                 key={i}
                 src={`https://picsum.photos/seed/${i + 10}/40/40`}
-                alt="Usuária satisfeita"
+                alt="Usuaria satisfecha"
                 className="w-10 h-10 rounded-full border-2 border-background"
               />
             ))}
@@ -47,7 +47,7 @@ export function HeroSection() {
                 <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
               ))}
             </div>
-            <span className="text-xs text-white font-semibold">+ 5.879 mulheres</span>
+            <span className="text-xs text-white font-semibold">+ 5.879 mujeres</span>
           </div>
         </div>
       </div>

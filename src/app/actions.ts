@@ -14,7 +14,7 @@ export async function createMelodyAction(
   if (!prompt || prompt.trim().length < 10) {
     return {
       message:
-        "Please provide more details about your desired outcome (at least 10 characters).",
+        "Por favor, proporciona más detalles sobre el resultado deseado (al menos 10 caracteres).",
       audioUrl: null,
       error: true,
     };
@@ -23,17 +23,17 @@ export async function createMelodyAction(
   try {
     const result = await generatePersonalizedMelody(prompt);
     if (!result.media) {
-      throw new Error("The AI did not return a melody.");
+      throw new Error("La IA no devolvió ninguna melodía.");
     }
     return {
-      message: "Your personalized melody is ready!",
+      message: "¡Tu melodía personalizada está lista!",
       audioUrl: result.media,
     };
   } catch (error) {
     console.error(error);
     return {
       message:
-        "An error occurred while generating your melody. Please try again later.",
+        "Ocurreu un error al generar tu melodía. Por favor, inténtalo de nuevo más tarde.",
       audioUrl: null,
       error: true,
     };

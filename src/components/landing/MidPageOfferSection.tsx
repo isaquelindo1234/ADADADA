@@ -86,7 +86,7 @@ export function MidPageOfferSection() {
                 <Timer className="h-10 w-10 text-yellow-400 flex-shrink-0" />
                 <div>
                     <h4 className="font-bold text-yellow-300">Atención: Oferta Limitada</h4>
-                    <p className="text-sm text-yellow-200/80">Esta oferta especial solo está disponible enquanto esta página estiver aberta. Se a fechar, poderá perder o acesso ao preço promocional.</p>
+                    <p className="text-sm text-yellow-200/80">Esta oferta especial solo está disponible mientras esta página esté abierta. Si la cierra, podría perder el acceso al precio promocional.</p>
                 </div>
             </div>
             

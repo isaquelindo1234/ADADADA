@@ -11,15 +11,15 @@ export function MelodyPlayer({ audioUrl }: MelodyPlayerProps) {
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
           <Music2 className="h-6 w-6 text-primary" />
-          Your Personalized Melody
+          Tu Pulso del Amor Personalizado
         </CardTitle>
       </CardHeader>
       <CardContent>
         <audio controls autoPlay src={audioUrl} className="w-full">
-          Your browser does not support the audio element.
+          Tu navegador no soporta el elemento de audio.
         </audio>
         <p className="text-sm text-muted-foreground mt-3">
-          Listen with headphones for the best experience. Find a quiet place and let the frequencies work their magic.
+          Escucha con auriculares para la mejor experiencia. Encuentra un lugar tranquilo y deja que las frecuencias hagan su magia.
         </p>
       </CardContent>
     </Card>

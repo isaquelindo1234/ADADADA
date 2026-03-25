@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -20,10 +19,10 @@ export function InfoSection() {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
               <p>
-                Essa melodia é tão poderosa, que te dá uma <span className="text-white font-semibold">"vantagem injusta"</span> sobre os homens, e eu já te adianto. Se você não gosta de chamar atenção, ser vista e notada pelas pessoas, ou ser cortejada pelo seu homem é melhor não escutar...
+                Esta melodía es tan poderosa que te da una <span className="text-white font-semibold">"ventaja injusta"</span> sobre los hombres, y ya te lo adelanto. Si no te gusta llamar la atención, ser vista y notada por las personas, o ser cortejada por tu hombre, es mejor no escuchar...
               </p>
               <p>
-                Chega de perder tempo com coisas que não funcionam, contato zero, mensagem para conquistar, livros de autoajuda, ebooks que só te contam teorias vazias! Isso não vai te ajudar em nada, eu já fez tudo o que você imaginou, até descobrir isso.
+                ¡Basta de perder tiempo con cosas que no funcionan: contacto cero, mensajes para conquistar, libros de autoayuda o ebooks que solo te cuentan teorías vacías! Esto no te ayudará en nada; yo ya hice todo lo que imaginaste antes de descubrir esto.
               </p>
             </div>
             <div className="relative group">
@@ -47,9 +46,9 @@ export function InfoSection() {
       <div className="py-16 md:py-24 bg-card/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <p className="text-primary font-bold mb-4 uppercase tracking-widest text-sm">Se seu relacionamento está por um fio, ou ele te abandonou...</p>
+            <p className="text-primary font-bold mb-4 uppercase tracking-widest text-sm">Si tu relación pende de un hilo o él te abandonó...</p>
             <h2 className="text-3xl md:text-5xl font-headline font-bold text-white">
-              Eu sei exatamente como você se sente...<br/>eu já passei por isso!
+              Sé exactamente cómo te sientes...<br/>¡yo ya pasé por eso!
             </h2>
           </div>
           
@@ -59,7 +58,7 @@ export function InfoSection() {
                 {isMounted ? (
                   <img
                     src="https://i.imgur.com/GTdHh1h.gif"
-                    alt="Demonstração"
+                    alt="Demostración"
                     className="w-full h-auto object-cover"
                     loading="lazy"
                   />
@@ -70,19 +69,19 @@ export function InfoSection() {
             </div>
             <div className="order-1 md:order-2 space-y-6 text-muted-foreground text-base leading-relaxed">
               <p>
-                Durante muito tempo eu vi minhas amigas, parentes próximos e pessoas que acompanho nas redes sociais com relacionamentos tão incríveis, pedidos de casamentos, flores, viagens...
+                Durante mucho tiempo vi a mis amigas, parientes cercanos y personas que sigo en redes sociales con relaciones tan increíbles: propuestas de matrimonio, flores, viajes...
               </p>
               <p>
-                E eu me questionava, será que o meu relacionamento vai ser assim algum dia?.. Em meio a tantas brigas e desentendimentos, será que o problema está em mim? Eu nasci para ter um relacionamento arruinado?
+                Y me preguntaba: ¿será que mi relación será así algún día? En medio de tantas peleas y malentendidos, ¿será que o el problema está en mí? ¿Nací para tener una relación arruinada?
               </p>
               <p className="text-white font-medium italic">
-                Não, isso vai mudar a partir de hoje, se você ouvir essa MELODIA DO AMOR que ativa o interruptor da atração amorosa em você, é provável que ele te mande mensagem de forma quase que imediata.
+                No, eso va a cambiar a partir de hoy. Si escuchas este PULSO DEL AMOR que activa el interruptor de la atracción amorosa en ti, es probable que él te envíe un mensaje de forma casi inmediata.
               </p>
               <p>
-                A Melodia do amor aumenta instantaneamente o seu campo energético que está desalinhado, o verdadeiro motivo pelo o qual você está enfrentando desafios no seu relacionamento, como brigas, separações e até ter dificuldade para encontrar alguém.
+                Pulso del Amor aumenta instantáneamente tu campo energético que está desalineado, el verdadero motivo por el cual estás enfrentando desafíos en tu relación, como peleas, separaciones e incluso dificultad para encontrar a alguien.
               </p>
               <p className="text-primary font-semibold">
-                Essa Melodia é tão poderosa, que é praticamente como se você tivesse o "Controle Mental Masculino", e menos de 2% das mulheres sabem que isso existe!
+                Esta melodía es tan poderosa que es prácticamente como si tuvieras el "Control Mental Masculino", ¡y menos del 2% de las mujeres saben que esto existe!
               </p>
             </div>
           </div>

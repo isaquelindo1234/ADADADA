@@ -4,18 +4,18 @@ import { Headphones, Mail, MessageSquareHeart } from "lucide-react";
 const steps = [
     {
         icon: <Mail className="w-8 h-8 text-primary" />,
-        title: "Passo #01",
-        description: "Após gerar sua Melodia de Amor personalizada, pegue seus fones de ouvido, pois cada ouvido captura uma frequência específica."
+        title: "Paso #01",
+        description: "Después de generar tu Pulso del Amor personalizado, toma tus auriculares, ya que cada oído captura una frecuencia específica."
     },
     {
         icon: <Headphones className="w-8 h-8 text-primary" />,
-        title: "Passo #02",
-        description: "Ouça uma vez ao acordar e uma vez antes de dormir para atrair seu ex ou conquistar a pessoa que você gosta ainda mais rápido."
+        title: "Paso #02",
+        description: "Escucha una vez al despertar y otra antes de dormir para atraer a tu ex o conquistar a la persona que te gusta aún más rápido."
     },
     {
         icon: <MessageSquareHeart className="w-8 h-8 text-primary" />,
-        title: "Passo #03",
-        description: "Em poucos dias, você receberá uma mensagem, ou eles podem até aparecer na sua porta. A maneira como as pessoas te olham vai mudar."
+        title: "Paso #03",
+        description: "En pocos días, recibirás un mensaje o incluso podrían aparecer en tu puerta. La forma en que las personas te miran cambiará."
     }
 ]
 
@@ -25,7 +25,7 @@ export function HowItWorks() {
         <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-3xl text-center mb-12">
                 <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                    Veja como é simples...
+                    Mira qué sencillo es...
                 </h2>
             </div>
             <div className="grid md:grid-cols-3 gap-6">

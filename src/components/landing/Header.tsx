@@ -7,7 +7,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <Music4 className="h-8 w-8 text-primary" />
           <h1 className="text-2xl font-bold tracking-tight text-white">
-            Melodia do Amor
+            Pulso del Amor
           </h1>
         </div>
       </div>
