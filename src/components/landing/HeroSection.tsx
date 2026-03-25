@@ -1,73 +1,62 @@
 'use client';
 
-import Script from 'next/script';
-import { ProgressBar } from './ProgressBar';
 import { Button } from '@/components/ui/button';
+import { Star } from 'lucide-react';
 
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'vturb-smartplayer': any;
-    }
-  }
-}
-
-interface HeroSectionProps {
-  showButton?: boolean;
-}
-
-export function HeroSection({ showButton }: HeroSectionProps) {
+export function HeroSection() {
   return (
-    <section className="py-8 md:py-12 text-center bg-background">
-      <div className="container mx-auto px-4 flex flex-col items-center">
-        <div className="w-full max-w-3xl md:max-w-[700px]">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-headline font-bold text-white leading-tight mb-6 text-center">
-            Descubre cómo hacer que él te extrañe, vaya tras de ti y suplique volver —<span className="text-primary">sin parecer desesperada ni perseguido.</span>
-          </h1>
-          <p className="max-w-xl mx-auto text-base md:text-lg text-muted-foreground mb-8">
-            (Funciona en 5 días or menos, incluso si él está frío o distante)
-          </p>
+    <section className="py-12 md:py-20 text-center bg-background relative overflow-hidden">
+      <div className="container mx-auto px-4 flex flex-col items-center relative z-10">
+        <p className="text-primary font-bold mb-4 uppercase tracking-widest text-sm md:text-base animate-pulse">
+          Ouça essa melodia do amor por 5 minutos
+        </p>
+        <h1 className="text-4xl md:text-6xl font-headline font-bold text-white leading-tight mb-6 max-w-4xl">
+          E faça o seu ex voltar <span className="text-primary">correndo para você</span>
+        </h1>
+        <p className="max-w-2xl mx-auto text-muted-foreground text-lg md:text-xl mb-10 font-body">
+          Você terá ele na palma da sua mão, quando você ativar esse interruptor de atração amorosa no seu cérebro, abre-se o caminho para o relacionamento que sempre sonhou!
+        </p>
 
-          {/* VSL Video Container */}
-          <div className="w-full mb-6 flex justify-center">
-            <div className="w-full max-w-[400px]">
-              <vturb-smartplayer
-                id="vid-69c1a5303d18cfb2430cacf4"
-                style={{ display: 'block', margin: '0 auto', width: '100%', maxWidth: '400px' }}
+        <div className="w-full max-w-md mx-auto mb-8">
+          <a 
+            href="https://pay.hotmart.com/E101916835T?checkoutMode=10" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <Button
+              size="lg"
+              className="w-full h-auto py-6 text-xl font-bold btn-glow btn-gradient rounded-full leading-tight uppercase"
+            >
+              QUERO OUVIR A FREQUÊNCIA
+            </Button>
+          </a>
+        </div>
+
+        {/* Social Proof Avatars */}
+        <div className="flex flex-col items-center gap-3">
+          <div className="flex -space-x-2">
+            {[1, 2, 3, 4, 5].map((i) => (
+              <img
+                key={i}
+                src={`https://picsum.photos/seed/${i + 10}/40/40`}
+                alt="Usuária satisfeita"
+                className="w-10 h-10 rounded-full border-2 border-background"
               />
-              <Script
-                src="https://scripts.converteai.net/aa65ee97-137b-4cf6-a06b-e20a641d4cda/players/69c1a5303d18cfb2430cacf4/v4/player.js"
-                strategy="afterInteractive"
-                async
-              />
-            </div>
+            ))}
           </div>
-
-          {/* Delayed CTA Button */}
-          {showButton && (
-            <div className="w-full max-w-md mx-auto mb-8 animate-in fade-in zoom-in duration-500">
-              <a 
-                href="https://pay.hotmart.com/E101916835T?checkoutMode=10" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <Button
-                  size="lg"
-                  className="w-full h-auto py-5 text-xl md:text-2xl font-bold btn-glow btn-gradient rounded-full leading-tight whitespace-normal uppercase"
-                >
-                  SÍ, QUIERO EL PODER PARA CONQUISTARLO
-                </Button>
-              </a>
-              <p className="text-xs text-muted-foreground mt-3 flex items-center justify-center gap-2">
-                <span className="inline-block w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                Acceso inmediato disponible
-              </p>
+          <div className="flex items-center gap-1">
+            <div className="flex">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+              ))}
             </div>
-          )}
-
-          <ProgressBar />
+            <span className="text-xs text-white font-semibold">+ 5.879 mulheres</span>
+          </div>
         </div>
       </div>
+      
+      {/* Background decoration */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] -z-10" />
     </section>
   );
 }
