@@ -1,9 +1,15 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export function InfoSection() {
+  const [isMounted, setIsMounted] = useState(false);
   const headphonesWoman = PlaceHolderImages.find(p => p.id === 'benefit-woman');
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
     <section className="bg-background">
@@ -49,14 +55,18 @@ export function InfoSection() {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="order-2 md:order-1 relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/5 bg-black">
-                <video
-                  src="https://i.imgur.com/hK7FIIM.mp4"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className="w-full h-auto object-cover"
-                />
+                {isMounted ? (
+                  <video
+                    src="https://i.imgur.com/hK7FIIM.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-auto object-cover"
+                  />
+                ) : (
+                  <div className="w-full aspect-video bg-black/20 animate-pulse" />
+                )}
               </div>
             </div>
             <div className="order-1 md:order-2 space-y-6 text-muted-foreground text-base leading-relaxed">
