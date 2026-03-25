@@ -4,7 +4,6 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export function InfoSection() {
   const headphonesWoman = PlaceHolderImages.find(p => p.id === 'benefit-woman');
-  const contemplativeWoman = PlaceHolderImages.find(p => p.id === 'contemplative-woman');
 
   return (
     <section className="bg-background">
@@ -49,16 +48,16 @@ export function InfoSection() {
           
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="order-2 md:order-1 relative">
-              {contemplativeWoman && (
-                <img
-                  src={contemplativeWoman.imageUrl}
-                  alt={contemplativeWoman.description}
-                  width={500}
-                  height={600}
-                  className="rounded-2xl object-cover w-full shadow-2xl"
-                  data-ai-hint={contemplativeWoman.imageHint}
+              <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/5 bg-black">
+                <video
+                  src="https://i.imgur.com/OUiJRYN.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-auto object-cover"
                 />
-              )}
+              </div>
             </div>
             <div className="order-1 md:order-2 space-y-6 text-muted-foreground text-base leading-relaxed">
               <p>
