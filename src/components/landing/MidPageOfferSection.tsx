@@ -1,6 +1,6 @@
 'use client';
 
-import { CheckCircle2, Gift, Sparkles, ShieldCheck, Lock, CircleCheckBig, ShieldAlert, Timer } from 'lucide-react';
+import { CheckCircle2, Gift, Sparkles, ShieldCheck, Lock, CircleCheckBig, Timer } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export function MidPageOfferSection() {
@@ -69,7 +69,7 @@ export function MidPageOfferSection() {
               <p className='text-xs text-muted-foreground mt-1'>(El valor será convertido a tu moneda local en el checkout)</p>
             </div>
 
-            <a href="https://pay.hotmart.com/E101916835T?checkoutMode=10" target="_blank" rel="noopener noreferrer">
+            <a href="https://pay.hotmart.com/E101916835T?off=h7rlii2k&checkoutMode=10" target="_blank" rel="noopener noreferrer">
               <Button
                   size="lg"
                   className="w-full h-auto py-4 text-lg md:text-xl font-bold btn-glow btn-gradient mb-6 leading-tight whitespace-normal"

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export function CheckoutButton() {
     return (
         <a
-            href="https://pay.hotmart.com/E101916835T?checkoutMode=10"
+            href="https://pay.hotmart.com/E101916835T?off=h7rlii2k&checkoutMode=10"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full max-w-[320px] mx-auto block my-5"

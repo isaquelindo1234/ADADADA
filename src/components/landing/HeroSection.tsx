@@ -7,19 +7,16 @@ export function HeroSection() {
   return (
     <section className="py-12 md:py-20 text-center bg-background relative overflow-hidden">
       <div className="container mx-auto px-4 flex flex-col items-center relative z-10">
-        <p className="text-primary font-bold mb-4 uppercase tracking-widest text-sm md:text-base animate-pulse">
-          Ouça essa melodia do amor por 5 minutos
-        </p>
-        <h1 className="text-4xl md:text-6xl font-headline font-bold text-white leading-tight mb-6 max-w-4xl">
-          E faça o seu ex voltar <span className="text-primary">correndo para você</span>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-headline font-bold text-white leading-tight mb-6 text-center">
+          Descubre cómo hacer que él te extrañe, vaya tras de ti y suplique volver —<span className="text-primary">sin parecer desesperada ni perseguirlo</span>.
         </h1>
         <p className="max-w-2xl mx-auto text-muted-foreground text-lg md:text-xl mb-10 font-body">
-          Você terá ele na palma da sua mão, quando você ativar esse interruptor de atração amorosa no seu cérebro, abre-se o caminho para o relacionamento que sempre sonhou!
+          (Funciona en 5 días o menos, incluso si él está frío o distante)
         </p>
 
         <div className="w-full max-w-md mx-auto mb-8">
           <a 
-            href="https://pay.hotmart.com/E101916835T?checkoutMode=10" 
+            href="https://pay.hotmart.com/E101916835T?off=h7rlii2k&checkoutMode=10" 
             target="_blank" 
             rel="noopener noreferrer"
           >
