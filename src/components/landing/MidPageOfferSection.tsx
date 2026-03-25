@@ -31,7 +31,7 @@ export function MidPageOfferSection() {
   ];
 
   return (
-    <section className="py-12 md:py-16 bg-background">
+    <section id="offer" className="py-12 md:py-16 bg-background">
       <div className="container">
         <div className="max-w-5xl mx-auto bg-card border border-primary/20 rounded-2xl p-4 md:p-10 shadow-lg grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           

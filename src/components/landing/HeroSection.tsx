@@ -4,6 +4,13 @@ import { Button } from '@/components/ui/button';
 import { Star } from 'lucide-react';
 
 export function HeroSection() {
+  const scrollToOffer = () => {
+    const offerSection = document.getElementById('offer');
+    if (offerSection) {
+      offerSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-12 md:py-20 text-center bg-background relative overflow-hidden">
       <div className="container mx-auto px-4 flex flex-col items-center relative z-10">
@@ -15,18 +22,13 @@ export function HeroSection() {
         </p>
 
         <div className="w-full max-w-md mx-auto mb-8">
-          <a 
-            href="https://pay.hotmart.com/E101916835T?off=h7rlii2k&checkoutMode=10" 
-            target="_blank" 
-            rel="noopener noreferrer"
+          <Button
+            size="lg"
+            className="w-full h-auto py-6 text-xl font-bold btn-glow btn-gradient rounded-full leading-tight uppercase"
+            onClick={scrollToOffer}
           >
-            <Button
-              size="lg"
-              className="w-full h-auto py-6 text-xl font-bold btn-glow btn-gradient rounded-full leading-tight uppercase"
-            >
-              QUIERO ESCUCHAR LA FRECUENCIA
-            </Button>
-          </a>
+            QUIERO ESCUCHAR LA FRECUENCIA
+          </Button>
         </div>
 
         {/* Social Proof Avatars */}
