@@ -50,7 +50,7 @@ export function InfoSection() {
             <div className="order-2 md:order-1 relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/5 bg-black">
                 <video
-                  src="https://i.imgur.com/OUiJRYN.mp4"
+                  src="https://i.imgur.com/hK7FIIM.mp4"
                   autoPlay
                   muted
                   loop
